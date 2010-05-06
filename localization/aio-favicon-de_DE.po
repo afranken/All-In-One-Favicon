@@ -1,0 +1,151 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: All In One Favicon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-04 01:21+0100\n"
+"PO-Revision-Date: 2010-05-04 01:21+0100\n"
+"Last-Translator: \n"
+"Language-Team: Techotronic <blog@techotronic.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: all-in-one-favicon.php:115
+msgid "Using"
+msgstr "Verwendet"
+
+#: all-in-one-favicon.php:189
+#, php-format
+msgid "Successfully updated %1$s settings."
+msgstr "&Auml;nderungen der %1$s Einstellungen wurden erfolgreich gespeichert."
+
+#: all-in-one-favicon.php:191
+#, php-format
+msgid "%1$s settings were successfully deleted."
+msgstr "Die Einstellungen von %1$s wurden erfolgreich entfernt."
+
+#: all-in-one-favicon.php:231
+msgid "Did not update settings, you do not have the necessary rights."
+msgstr "Einstellungen nicht aktualisiert, da Sie nicht die hierfür erforderlichen Rechte besitzen."
+
+#: all-in-one-favicon.php:278
+#, php-format
+msgid "Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox."
+msgstr "Konnte die Einstellungen von %1$s nicht entfernen. Entweder besitzen Sie nicht die notwendigen Rechte, oder Sie haben vergessen, die Checkbox [x] zu aktivieren."
+
+#: includes/settings-page.php:14
+#: includes/settings-page.php:21
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/settings-page.php:30
+#: includes/settings-page.php:61
+#, php-format
+msgid "%1$s ICO"
+msgstr ""
+
+#: includes/settings-page.php:30
+#: includes/settings-page.php:40
+#: includes/settings-page.php:51
+msgid "Frontend"
+msgstr ""
+
+#: includes/settings-page.php:34
+#: includes/settings-page.php:44
+#: includes/settings-page.php:55
+#: includes/settings-page.php:65
+#: includes/settings-page.php:75
+#: includes/settings-page.php:86
+msgid "Upload Favicon"
+msgstr "Favicon hochladen"
+
+#: includes/settings-page.php:35
+#: includes/settings-page.php:45
+#: includes/settings-page.php:56
+#: includes/settings-page.php:66
+#: includes/settings-page.php:76
+#: includes/settings-page.php:87
+msgid "Enter a URL or upload a Favicon."
+msgstr "GIb die URL zu einem vorhandenen Favicon ein oder lade ein neues hoch."
+
+#: includes/settings-page.php:40
+#: includes/settings-page.php:71
+#, php-format
+msgid "%1$s PNG"
+msgstr ""
+
+#: includes/settings-page.php:51
+#: includes/settings-page.php:82
+#, php-format
+msgid "%1$s GIF"
+msgstr ""
+
+#: includes/settings-page.php:61
+#: includes/settings-page.php:71
+#: includes/settings-page.php:82
+msgid "Backend"
+msgstr ""
+
+#: includes/settings-page.php:93
+msgid "Save Changes"
+msgstr "&Auml;nderungen speichern"
+
+#: includes/settings-page.php:102
+#: includes/settings-page.php:111
+msgid "Delete Settings"
+msgstr "Einstellungen löschen"
+
+#: includes/settings-page.php:105
+msgid "Check the box and click this button to delete settings of this plugin."
+msgstr "Aktivieren Sie die Checkbox und klicken Sie anschließend die folgende Schaltfläche, um die Einstellungen dieses Plugins zu entfernen."
+
+#: includes/settings-page.php:121
+msgid "Tips"
+msgstr "Tipps"
+
+#: includes/settings-page.php:127
+msgid "Favicon wikipedia entry"
+msgstr "Wikipedia Eintrag"
+
+#: includes/settings-page.php:130
+msgid "<a href=\"http://en.wikipedia.org/wiki/Favicon\">Wikipedia</a> offers much information about favicon types and sizes."
+msgstr "<a href=\"http://de.wikipedia.org/wiki/Favicon\">Wikipedia</a> bietet viele Informationen &uuml;ber Favicons."
+
+#: includes/settings-page.php:135
+msgid "Favicon generator"
+msgstr "Favicon Generator"
+
+#: includes/settings-page.php:138
+msgid "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> provides a favicon generator that is very easy to use."
+msgstr "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> hat einen einfachen Favicon Generator."
+
+#: includes/settings-page.php:143
+msgid "Favicon validator"
+msgstr "Favicon Validator"
+
+#: includes/settings-page.php:146
+msgid "<a href=\"http://www.html-kit.com/favicon/validator\">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers."
+msgstr "<a href=\"http://www.html-kit.com/favicon/validator\">HTML Kit</a> hat einen online Favicon Validator der Dir sagt, ob Dein Favicon richtig konfiguriert ist und ob es kompatibel zu allen Browsern ist."
+
+#: includes/settings-page.php:156
+msgid "Donate"
+msgstr "Spenden"
+
+#: includes/settings-page.php:170
+msgid "If you would like to make a small (or large) contribution towards future development please consider making a donation."
+msgstr "Wenn Du eine kleine (oder grosse) Spende f&uuml;r die Weiterentwicklung abgeben m&ouml;chtest, kannst Du das per PayPal tun."
+
+#: includes/settings-page.php:179
+msgid "Translation"
+msgstr "&Uuml;bersetzung"
+
+#: includes/settings-page.php:182
+msgid "The english translation was done by <a href=\"http://www.techotronic.de\">Arne Franken</a>."
+msgstr "Die &Uuml;bersetzung ins Deutsche wurde von <a href=\"http://www.techotronic.de\">Arne Franken</a> durchgef&uuml;hrt."
+
