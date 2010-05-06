@@ -1,0 +1,444 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jQuery-Colorbox 3.2 Arabic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-06 22:07+0100\n"
+"PO-Revision-Date: 2010-05-06 22:08+0100\n"
+"Last-Translator: \n"
+"Language-Team: Mickey Mouse <modarsoos@yahoo.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Arabic\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Country: SYRIAN ARAB REPUBLIC\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: all-in-one-favicon.php:117
+msgid "Using"
+msgstr ""
+
+#: all-in-one-favicon.php:191
+#, php-format
+msgid "Successfully updated %1$s settings."
+msgstr "تم تحديث إعدادات برنامج %1$s بنجاح."
+
+#: all-in-one-favicon.php:193
+#, php-format
+msgid "%1$s settings were successfully deleted."
+msgstr "%1$s تم حذف الإعدادات بنجاح."
+
+#: all-in-one-favicon.php:233
+msgid "Did not update settings, you do not have the necessary rights."
+msgstr "لم يتم تحديث الإعدادات، ليس لديك الصلاحيات الكافية."
+
+#: all-in-one-favicon.php:280
+#, php-format
+msgid "Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox."
+msgstr "لم يتم حذف إعدادات %1$s  أو ليس لديك الصلاحيات الكافية أو بأنك لم تقم بتحديد العلامة داخل المربع الصغير قبل الضغط على زر حذف الإعدادات."
+
+#: includes/settings-page.php:14
+#: includes/settings-page.php:21
+msgid "Settings"
+msgstr "إعدادات"
+
+#: includes/settings-page.php:30
+#: includes/settings-page.php:61
+#, php-format
+msgid "%1$s ICO"
+msgstr ""
+
+#: includes/settings-page.php:30
+#: includes/settings-page.php:40
+#: includes/settings-page.php:51
+msgid "Frontend"
+msgstr ""
+
+#: includes/settings-page.php:34
+#: includes/settings-page.php:44
+#: includes/settings-page.php:55
+#: includes/settings-page.php:65
+#: includes/settings-page.php:75
+#: includes/settings-page.php:86
+msgid "Upload Favicon"
+msgstr ""
+
+#: includes/settings-page.php:35
+#: includes/settings-page.php:45
+#: includes/settings-page.php:56
+#: includes/settings-page.php:66
+#: includes/settings-page.php:76
+#: includes/settings-page.php:87
+msgid "Enter a URL or upload a Favicon."
+msgstr ""
+
+#: includes/settings-page.php:40
+#: includes/settings-page.php:71
+#, php-format
+msgid "%1$s PNG"
+msgstr ""
+
+#: includes/settings-page.php:51
+#: includes/settings-page.php:82
+#, php-format
+msgid "%1$s GIF"
+msgstr ""
+
+#: includes/settings-page.php:61
+#: includes/settings-page.php:71
+#: includes/settings-page.php:82
+msgid "Backend"
+msgstr ""
+
+#: includes/settings-page.php:93
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: includes/settings-page.php:102
+#: includes/settings-page.php:111
+msgid "Delete Settings"
+msgstr "حذف الإعدادات"
+
+#: includes/settings-page.php:105
+msgid "Check the box and click this button to delete settings of this plugin."
+msgstr "ضع علامة في المربع واضغط على زر حذف الإعدادات ليتم حذف إعدادات البرنامج."
+
+#: includes/settings-page.php:121
+msgid "Tips"
+msgstr ""
+
+#: includes/settings-page.php:127
+msgid "Favicon wikipedia entry"
+msgstr ""
+
+#: includes/settings-page.php:130
+msgid "<a href=\"http://en.wikipedia.org/wiki/Favicon\">Wikipedia</a> offers much information about favicon types and sizes."
+msgstr ""
+
+#: includes/settings-page.php:135
+msgid "Favicon generator"
+msgstr ""
+
+#: includes/settings-page.php:138
+msgid "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> provides a favicon generator that is very easy to use."
+msgstr ""
+
+#: includes/settings-page.php:143
+msgid "Favicon validator"
+msgstr ""
+
+#: includes/settings-page.php:146
+msgid "<a href=\"http://www.html-kit.com/favicon/validator\">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers."
+msgstr ""
+
+#: includes/settings-page.php:156
+msgid "Donate"
+msgstr "تبرع"
+
+#: includes/settings-page.php:170
+msgid "If you would like to make a small (or large) contribution towards future development please consider making a donation."
+msgstr "إذا كنت ترغب بالمساهمة في تطوير البرنامج سواءً كانت مساهمتك (صغيرة أو كبيرة)، فنرجو منك أن تقوم بالتبرع."
+
+#: includes/settings-page.php:179
+msgid "Translation"
+msgstr "معلومات عن الترجمة"
+
+#: includes/settings-page.php:182
+msgid "The english translation was done by <a href=\"http://www.techotronic.de\">Arne Franken</a>."
+msgstr ""
+
+#~ msgid "Theme #1"
+#~ msgstr "القالب الأول"
+
+#~ msgid "Theme #2"
+#~ msgstr "القالب الثاني"
+
+#~ msgid "Theme #3"
+#~ msgstr "القالب الثالث"
+
+#~ msgid "Theme #4"
+#~ msgstr "القالب الرابع"
+
+#~ msgid "Theme #5"
+#~ msgstr "القالب الخامس"
+
+#~ msgid "Theme #6"
+#~ msgstr "القالب السادس"
+
+#~ msgid "Theme #7"
+#~ msgstr "القالب السابع"
+
+#~ msgid "Theme #8"
+#~ msgstr "القالب الثامن"
+
+#~ msgid "Theme #9"
+#~ msgstr "القالب التاسع"
+
+#~ msgid "Theme #10"
+#~ msgstr "القالب العاشر"
+
+#~ msgid "Theme #11"
+#~ msgstr "القالب الحادي عشر"
+
+#~ msgid "Theme #12"
+#~ msgstr "القالب الثاني عشر"
+
+#~ msgid "Theme #13"
+#~ msgstr "القالب الثالث عشر"
+
+#~ msgid "Theme #14"
+#~ msgstr "القالب الرابع عشر"
+
+#~ msgid "Theme #15"
+#~ msgstr "القالب الخامس عشر"
+
+#~ msgid "percent"
+#~ msgstr "بالمئة"
+
+#~ msgid "pixels"
+#~ msgstr "بيكسل"
+
+#~ msgid "elastic"
+#~ msgstr "تمدد"
+
+#~ msgid "fade"
+#~ msgstr "تضاءل"
+
+#~ msgid "none"
+#~ msgstr "بدون تأثير"
+
+#~ msgid "needs attention: the plugin is not activated to work for all images."
+#~ msgstr "تنبيه: لم يتم تنشيط برنامج صندوق عرض الشرائح ليعمل على جميع الصور."
+
+#~ msgid "close"
+#~ msgstr "إغلاق"
+
+#~ msgid "next"
+#~ msgstr "التالي"
+
+#~ msgid "previous"
+#~ msgstr "السابق"
+
+#~ msgid "start slideshow"
+#~ msgstr "بدء عرض الشرائح"
+
+#~ msgid "stop slideshow"
+#~ msgstr "إيقاف عرض الشرائح"
+
+#~ msgid "{current} of {total} images"
+#~ msgstr "{current} من {total} إجمالي الصور"
+
+#~ msgid "%1$s Settings"
+#~ msgstr "%1$s إعدادات"
+
+#~ msgid "Theme"
+#~ msgstr "حدد القالب"
+
+#~ msgid "Select the theme you want to use on your blog."
+#~ msgstr "حدد القالب الذي تريد استخدامه في موقعك من القائمة المنسدلة."
+
+#~ msgid "Theme screenshot"
+#~ msgstr "صورة القالب"
+
+#~ msgid "Automate %1$s for all images"
+#~ msgstr "شغل برنامج %1$s لجميع الصور تلقائياً"
+
+#~ msgid ""
+#~ "Automatically add colorbox-class to images in posts and pages. Also adds "
+#~ "colorbox-class to galleries. Images in one page or post are grouped "
+#~ "automatically."
+#~ msgstr ""
+#~ "أضف صندوق عرض الشرائح بشكل تلقائي لعرض الصور في المواضيع والصفحات. سيقوم "
+#~ "البرنامج بدمج جميع الصور في الموضوع تلقائياً."
+
+#~ msgid "Automate %1$s for images in WordPress galleries"
+#~ msgstr "أتمتة %1$s للصور في معرض صور الموقع"
+
+#~ msgid ""
+#~ "Automatically add colorbox-class to images in WordPress galleries, but "
+#~ "nowhere else. Images in one page or post are grouped automatically."
+#~ msgstr ""
+#~ "أضف صندوق عرض الشرائح بشكل تلقائي للصور في معرض صور الموقع، سيقوم "
+#~ "البرنامج بدمج جميع الصور في الموضوع تلقائياً."
+
+#~ msgid "Add Slideshow to groups"
+#~ msgstr "إضافة عرض الشرائح للمجموعات"
+
+#~ msgid "Add Slideshow functionality for %1$s Groups"
+#~ msgstr "إضافة عرض الشرائح لمجموعات %1$s"
+
+#~ msgid "Start Slideshow automatically"
+#~ msgstr "ابدأ عرض الشرائح تلقائياً"
+
+#~ msgid ""
+#~ "Start Slideshow automatically if slideshow functionality is added to %1$s "
+#~ "Groups"
+#~ msgstr ""
+#~ "ابدأ عرض الشرائح تلقائياً إذا كانت خصائص عرض الشرائح قد أضيفت لمجموعات %1$s"
+
+#~ msgid "Speed of the slideshow"
+#~ msgstr "سرعة عرض الشرائح"
+
+#~ msgid "milliseconds"
+#~ msgstr "ميلي ثانية"
+
+#~ msgid "Sets the speed of the slideshow, in milliseconds"
+#~ msgstr "حدد سرعة عرض الشرائح بالميلي ثانية"
+
+#~ msgid "Maximum width of an image"
+#~ msgstr "أقصى عرض للصورة"
+
+#~ msgid "Do not set width"
+#~ msgstr "عدم تعيين عرض"
+
+#~ msgid "Set maximum width of an image"
+#~ msgstr "تعيين أقصى عرض للصورة"
+
+#~ msgid ""
+#~ "Set the maximum width of the image in the Colorbox in relation to the "
+#~ "browser window in percent or pixels. If maximum width is not set, image "
+#~ "is as wide as the Colorbox"
+#~ msgstr ""
+#~ "حدد العرض الأقصى لصندوق عرض الشرائح بالنسبة المئوية أو بالبيكسل ليتناسب "
+#~ "مع متصفحك. إذا لم يتم تعيين العرض، سيكون عرض الصورة مثل عرض صندوق عرض "
+#~ "الشرائح"
+
+#~ msgid "Maximum height of an image"
+#~ msgstr "أقصى ارتفاع للصورة"
+
+#~ msgid "Do not set height"
+#~ msgstr "عدم تعيين الارتفاع"
+
+#~ msgid "Set maximum height of an image"
+#~ msgstr "تعيين الارتفاع الأقصى للصورة"
+
+#~ msgid ""
+#~ "Set the maximum height of the image in the Colorbox in relation to the "
+#~ "browser window to a value in percent or pixels. If maximum height is not "
+#~ "set, the image is as high as the Colorbox"
+#~ msgstr ""
+#~ "حدد الارتفاع الأقصى لصندوق عرض الشرائح بالنسبة المئوية أو بالبيكسل "
+#~ "ليتناسب مع متصفحك. إذا لم يتم تعيين الارتفاع، سيكون ارتفاع الصورة مثل "
+#~ "ارتفاع صندوق عرض الشرائح."
+
+#~ msgid "Maximum width of the Colorbox"
+#~ msgstr "الحد الأقصى لعرض صندوق عرض الشرائح"
+
+#~ msgid "Set width of the Colorbox"
+#~ msgstr "تعيين عرض صندوق عرض الشرائح"
+
+#~ msgid ""
+#~ "Set the maximum width of the Colorbox itself in relation to the browser "
+#~ "window to a value between in percent or pixels. If the image is bigger "
+#~ "than the colorbox, scrollbars are displayed. If width is not set, the "
+#~ "Colorbox will be as wide as the picture in it"
+#~ msgstr ""
+#~ "حدد العرض الأقصى لصندوق عرض الشرائح بالنسبة المئوية أو بالبيكسل ليتناسب "
+#~ "مع متصفحك. إذا كانت الصورة أكبر من صندوق عرض الشرائح، سيتم عرض أشرطة "
+#~ "التمرير، وإذا لم يتم تعيين العرض، سيكون صندوق عرض الشرائح عريضاً كعرض "
+#~ "الصورة التي بداخله."
+
+#~ msgid "Maximum height of the Colorbox"
+#~ msgstr "الحد الأقصى لارتفاع صندوق عرض الشرائح"
+
+#~ msgid "Set height of the Colorbox"
+#~ msgstr "تعيين ارتفاع صندوق عرض الشرائح"
+
+#~ msgid ""
+#~ "Set the maximum height of the Colorbox itself in relation to the browser "
+#~ "window to a value between in percent or pixels. If the image is bigger "
+#~ "than the colorbox, scrollbars are displayed. If height is not set, the "
+#~ "Colorbox will be as high as the picture in it"
+#~ msgstr ""
+#~ "حدد الارتفاع الأقصى لصندوق عرض الشرائح بالنسبة المئوية أو بالبيكسل "
+#~ "ليتناسب مع متصفحك. إذا كانت الصورة أكبر من صندوق عرض الشرائح، سيتم عرض "
+#~ "أشرطة التمرير، وإذا لم يتم تعيين الارتفاع، سيكون صندوق عرض الشرائح طويلاً "
+#~ "كطول الصورة التي بداخله."
+
+#~ msgid "Resize images"
+#~ msgstr "تعديل حجم الصورة"
+
+#~ msgid ""
+#~ "If enabled and if maximum width of images, maximum height of images, "
+#~ "width of the Colorbox, or height of the Colorbox have been defined, "
+#~ "ColorBox will scale photos to fit within the those values"
+#~ msgstr ""
+#~ "إذا كنت قد فعلت هذا الخيار وكنت قد عدلت في \"عرض وارتفاع الصور\" و\"عرض "
+#~ "وارتفاع صندوق عرض الشرائح\" سيقوم صندوق عرض الشرائح بعرض الصور لتتلائم مع "
+#~ "هذه القيم"
+
+#~ msgid "Close Colorbox on overlay click"
+#~ msgstr "إغلاق صندوق عرض الشرائح"
+
+#~ msgid ""
+#~ "If checked, enables closing ColorBox by clicking on the background overlay"
+#~ msgstr ""
+#~ "إذا حددت هذا الخيار، يمكنك إغلاق صندوق عرض الشرائح عند الضغط في أي مكان "
+#~ "على الخلفية الشفافة"
+
+#~ msgid "Preload images"
+#~ msgstr "تحميل مسبق للصور"
+
+#~ msgid ""
+#~ "Allows for preloading of \"next\" and \"previous\" content in a group, "
+#~ "after the current content has finished loading. Uncheck box to disable."
+#~ msgstr ""
+#~ "السماح للتحميل المسبق لأزرار \"التالي\" و\"السابق\" في المجموعات، بعد "
+#~ "تحميل المحتوى الحالي. أزل المربع للتعطيل."
+
+#~ msgid "Transition type"
+#~ msgstr "نوع الانتقال بين الصور"
+
+#~ msgid ""
+#~ "The transition type of the Colorbox. Can be set to \"elastic\", \"fade\", "
+#~ "or \"none\""
+#~ msgstr ""
+#~ "يمكنك ضبط إعدادات الانتقال بين الصور لصندوق عرض الشرائح إلى: تمدد، تضاءل، "
+#~ "أو بدون تأثير"
+
+#~ msgid "Transition speed"
+#~ msgstr "سرعة الانتقال بين الصور"
+
+#~ msgid ""
+#~ "Sets the speed of the \"fade\" and \"elastic\" transitions, in "
+#~ "milliseconds"
+#~ msgstr "حدد سرعة نوع الانتقال \"تمدد، تضاءل، بدون تأثير\" بالميلي ثانية"
+
+#~ msgid "Opacity"
+#~ msgstr "شفافية الخلفية"
+
+#~ msgid "The overlay opacity level. Range: 0 to 1"
+#~ msgstr "مستوى شفافية الخلفية. المدى: من 0 إلى 1"
+
+#~ msgid "Automate hiding of flash objects"
+#~ msgstr "أتمتة إخفاء عناصر الفلاش"
+
+#~ msgid ""
+#~ "Automatically hide embeded flash objects behind the Colorbox layer. Done "
+#~ "by setting the wmode to transparent."
+#~ msgstr ""
+#~ "قم بإخفاء عناصر الفلاش المدمجة خلف طبقة صندوق عرض الشرائح. يتم ذلك عن "
+#~ "طريق جعل إعدادات wmode شفافة."
+
+#~ msgid "Disable warning"
+#~ msgstr "تعطيل التحذير"
+
+#~ msgid ""
+#~ "Disables the warning that is displayed if the plugin is activated but the "
+#~ "auto-colorbox feature for all images is turned off."
+#~ msgstr ""
+#~ "تعطيل التحذير الذي يعرض في الصفحة الرئيسية للوحة تحكم الموقع عند تفعيل "
+#~ "الإضافة و عدم تفعيل البرنامج ليعمل على جميع الصور تلقائياً."
+
+#~ msgid "maxWidth"
+#~ msgstr "Maximum width of an image"
+
+#~ msgid "maxHeight"
+#~ msgstr "Maximum height of an image"
+
+#~ msgid "width"
+#~ msgstr "Maxinmum width of the Colorbox"
+
+#~ msgid "height"
+#~ msgstr "Maximum height of the Colorbox"
