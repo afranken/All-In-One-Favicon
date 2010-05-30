@@ -1,12 +1,12 @@
 === All In One Favicon ===
 Contributors: techotronic
 Donate link: http://www.techotronic.de/donate/
-Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, mu
+Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, mu, iphone
 Requires at least: 2.8
 Tested up to: 3.0
 Stable tag: 1.0
 
-Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif)
+Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).
 
 == Description ==
 
@@ -14,6 +14,7 @@ All In One Favicon adds favicons to your site and your admin pages.
 You can either use favicons you already uploaded or use the builtin upload mechanism to upload a favicon to your WordPress installation.
 
 All three favicon types are supported - .ico, .png and .gif (may be animated)
+Also, the Apple Touch Icon is supported.
 
 Localization
 
@@ -102,6 +103,9 @@ I'll include new FAQs in every new version. Promise.
 <a href="http://www.techotronic.de/plugins/all-in-one-favicon/favicon-settings-screenshot/">Please visit my site for a screenshot of the settings page</a>.
 
 == Changelog ==
+= 2.0 =
+* NEW: now supports Apple Touch Icons for backend and frontend
+* NEW: more links to websites containing information.
 
 = 1.0 =
 * NEW: Initial release.

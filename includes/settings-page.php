@@ -45,7 +45,6 @@
                             <br /><?php _e('Enter a URL or upload a Favicon.',AIOFAVICON_TEXTDOMAIN) ?>
                         </td>
                     </tr>
-
                     <tr>
                         <th scope="row">
                             <label for="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendGIF"><?php printf(__('%1$s GIF', AIOFAVICON_TEXTDOMAIN), __('Frontend', AIOFAVICON_TEXTDOMAIN)); ?>:</label>
@@ -56,6 +55,17 @@
                             <br /><?php _e('Enter a URL or upload a Favicon.',AIOFAVICON_TEXTDOMAIN) ?>
                         </td>
                     </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendApple"><?php printf(__('%1$s Apple touch icon', AIOFAVICON_TEXTDOMAIN), __('Frontend', AIOFAVICON_TEXTDOMAIN)); ?>:</label>
+                        </th>
+                        <td>
+                            <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendApple" class="aioFaviconUrl" type="text" size="50" name="<?php echo AIOFAVICON_SETTINGSNAME ?>[frontendApple]" value="<?php echo $this->aioFaviconSettings['frontendApple'] ?>" />
+                            <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendApple_button" class="button aioFaviconUpload" type="button" value="<?php echo htmlspecialchars(__('Upload Favicon',AIOFAVICON_TEXTDOMAIN)) ?>" />
+                            <br /><?php _e('Enter a URL or upload a Favicon.',AIOFAVICON_TEXTDOMAIN) ?>
+                        </td>
+                    </tr>
+
                     <tr>
                         <th scope="row">
                             <label for="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendICO"><?php printf(__('%1$s ICO', AIOFAVICON_TEXTDOMAIN), __('Backend', AIOFAVICON_TEXTDOMAIN)); ?>:</label>
@@ -76,7 +86,6 @@
                             <br /><?php _e('Enter a URL or upload a Favicon.',AIOFAVICON_TEXTDOMAIN) ?>
                         </td>
                     </tr>
-
                     <tr>
                         <th scope="row">
                             <label for="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendGIF"><?php printf(__('%1$s GIF', AIOFAVICON_TEXTDOMAIN), __('Backend', AIOFAVICON_TEXTDOMAIN)); ?>:</label>
@@ -84,6 +93,16 @@
                         <td>
                             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendGIF" class="aioFaviconUrl" type="text" size="50" name="<?php echo AIOFAVICON_SETTINGSNAME ?>[backendGIF]" value="<?php echo $this->aioFaviconSettings['backendGIF'] ?>" />
                             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendGIF_button" class="button aioFaviconUpload" type="button" value="<?php echo htmlspecialchars(__('Upload Favicon',AIOFAVICON_TEXTDOMAIN)) ?>" />
+                            <br /><?php _e('Enter a URL or upload a Favicon.',AIOFAVICON_TEXTDOMAIN) ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendApple"><?php printf(__('%1$s Apple touch icon', AIOFAVICON_TEXTDOMAIN), __('Backend', AIOFAVICON_TEXTDOMAIN)); ?>:</label>
+                        </th>
+                        <td>
+                            <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendApple" class="aioFaviconUrl" type="text" size="50" name="<?php echo AIOFAVICON_SETTINGSNAME ?>[backendApple]" value="<?php echo $this->aioFaviconSettings['backendApple'] ?>" />
+                            <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendApple_button" class="button aioFaviconUpload" type="button" value="<?php echo htmlspecialchars(__('Upload Favicon',AIOFAVICON_TEXTDOMAIN)) ?>" />
                             <br /><?php _e('Enter a URL or upload a Favicon.',AIOFAVICON_TEXTDOMAIN) ?>
                         </td>
                     </tr>
@@ -144,6 +163,14 @@
                     </th>
                     <td id="faviconValidator">
                         <?php _e('<a href="http://www.html-kit.com/favicon/validator">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers.',AIOFAVICON_TEXTDOMAIN) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="faviconGenerator"><?php _e('Favicon validator', AIOFAVICON_TEXTDOMAIN); ?>:</label>
+                    </th>
+                    <td id="faviconAppleHowto">
+                        <?php _e('<a href="http://developer.apple.com/safari/library/documentation/internetweb/conceptual/iPhoneWebAppHIG/MetricsLayout/MetricsLayout.html">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon.',AIOFAVICON_TEXTDOMAIN) ?>
                     </td>
                 </tr>
               </table>

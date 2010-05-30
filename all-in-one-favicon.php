@@ -16,8 +16,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-?>
-<?php
+
 // define constants
 define('AIOFAVICON_VERSION', '1.0');
 
@@ -114,7 +113,7 @@ class AllInOneFavicon {
      * @author Arne Franken
      */
     function renderMetaLink() { ?>
-        <li><?php _e('Using');?> <a href="http://www.techotronic.de/plugins/all-in-one-favicon/" title="<?php echo AIOFAVICON_NAME ?>"><?php echo AIOFAVICON_NAME ?></a></li>
+        <li><?php _e('Using',AIOFAVICON_TEXTDOMAIN);?> <a href="http://www.techotronic.de/plugins/all-in-one-favicon/" title="<?php echo AIOFAVICON_NAME ?>"><?php echo AIOFAVICON_NAME ?></a></li>
     <?php }
 
     // renderMetaLink()
