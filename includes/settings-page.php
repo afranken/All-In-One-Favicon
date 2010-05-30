@@ -167,7 +167,7 @@
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label for="faviconGenerator"><?php _e('Favicon validator', AIOFAVICON_TEXTDOMAIN); ?>:</label>
+                        <label for="faviconGenerator"><?php _e('Apple Touch Icon Howto', AIOFAVICON_TEXTDOMAIN); ?>:</label>
                     </th>
                     <td id="faviconAppleHowto">
                         <?php _e('<a href="http://developer.apple.com/safari/library/documentation/internetweb/conceptual/iPhoneWebAppHIG/MetricsLayout/MetricsLayout.html">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon.',AIOFAVICON_TEXTDOMAIN) ?>
