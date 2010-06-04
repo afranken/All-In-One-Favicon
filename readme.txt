@@ -16,7 +16,7 @@ You can either use favicons you already uploaded or use the builtin upload mecha
 All three favicon types are supported - .ico, .png and .gif (may be animated)
 Also, Apple Touch Icons are supported.
 
-See <a href="">plugin page</a> for more information and screenshots.
+See <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">plugin page</a> for more information and screenshots.
 
 Localization
 
