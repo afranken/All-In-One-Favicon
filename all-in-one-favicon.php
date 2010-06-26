@@ -309,7 +309,7 @@ class AllInOneFavicon {
     /**
      * Read HTML from a remote url
      *
-     * @since 3.5
+     * @since 2.1
      * @access private
      * @author Arne Franken
      *
@@ -343,7 +343,7 @@ class AllInOneFavicon {
     /**
      * gets current URL to return to after donating
      *
-     * @since 3.5
+     * @since 2.1
      * @access private
      * @author Arne Franken
      */
