@@ -61,6 +61,12 @@ if (!defined('AIOFAVICON_PLUGIN_LOCALIZATION_DIR')) {
 if (!defined('AIOFAVICON_SETTINGSNAME')) {
     define('AIOFAVICON_SETTINGSNAME', 'aio-favicon_settings');
 }
+if (!defined('AIOFAVICON_LATESTDONATEURL')) {
+    define('AIOFAVICON_LATESTDONATEURL', 'http://favicon.techotronic.de/latest-donations.php');
+}
+if (!defined('AIOFAVICON_TOPDONATEURL')) {
+    define('AIOFAVICON_TOPDONATEURL', 'http://favicon.techotronic.de/top-donations.php');
+}
 //define constants
 
 class AllInOneFavicon {
@@ -299,7 +305,67 @@ class AllInOneFavicon {
     }
 
     // aioFaviconDeleteSettingsFromDatabase()
-    
+
+    /**
+     * Read HTML from a remote url
+     *
+     * @since 3.5
+     * @access private
+     * @author Arne Franken
+     *
+     * @param string $url
+     * @return the response
+     */
+    function getRemoteContent($url) {
+        if ( function_exists('wp_remote_request') ) {
+
+            $options = array();
+            $options['headers'] = array(
+                'User-Agent' => 'All-in-One Favicon V' . AIOFAVICON_VERSION . '; (' . get_bloginfo('url') .')'
+             );
+
+            $response = wp_remote_request($url, $options);
+
+            if ( is_wp_error( $response ) )
+                return false;
+
+            if ( 200 != wp_remote_retrieve_response_code($response) )
+                return false;
+
+            return wp_remote_retrieve_body($response);
+        }
+
+        return false;
+    }
+
+    // getRemoteContent()
+
+    /**
+     * gets current URL to return to after donating
+     *
+     * @since 3.5
+     * @access private
+     * @author Arne Franken
+     */
+    function getReturnLocation(){
+        $currentLocation = "http";
+        $currentLocation .= ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on') ? "s" : "")."://";
+        $currentLocation .= $_SERVER['SERVER_NAME'];
+        if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on') {
+            if($_SERVER['SERVER_PORT']!='443') {
+                $currentLocation .= ":".$_SERVER['SERVER_PORT'];
+            }
+        }
+        else {
+            if($_SERVER['SERVER_PORT']!='80') {
+                $currentLocation .= ":".$_SERVER['SERVER_PORT'];
+            }
+        }
+        $currentLocation .= $_SERVER['REQUEST_URI'];
+        echo $currentLocation;
+    }
+
+    // getReturnLocation()
 }
 
 ?><?php
