@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All In One Favicon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-04 01:15+0100\n"
-"PO-Revision-Date: 2010-05-04 01:15+0100\n"
+"POT-Creation-Date: 2010-06-27 00:58+0100\n"
+"PO-Revision-Date: 2010-06-27 00:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: Techotronic <blog@techotronic.de>\n"
 "MIME-Version: 1.0\n"
@@ -16,136 +16,197 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: all-in-one-favicon.php:115
+#: all-in-one-favicon.php:122
 msgid "Using"
 msgstr ""
 
-#: all-in-one-favicon.php:189
+#: all-in-one-favicon.php:196
 #, php-format
 msgid "Successfully updated %1$s settings."
 msgstr ""
 
-#: all-in-one-favicon.php:191
+#: all-in-one-favicon.php:198
 #, php-format
 msgid "%1$s settings were successfully deleted."
 msgstr ""
 
-#: all-in-one-favicon.php:231
+#: all-in-one-favicon.php:238
 msgid "Did not update settings, you do not have the necessary rights."
 msgstr ""
 
-#: all-in-one-favicon.php:278
+#: all-in-one-favicon.php:285
 #, php-format
 msgid "Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox."
 msgstr ""
 
-#: includes/settings-page.php:14
-#: includes/settings-page.php:21
+#: includes/settings-page.php:15
+#: includes/settings-page.php:23
 msgid "Settings"
 msgstr ""
 
-#: includes/settings-page.php:30
-#: includes/settings-page.php:61
+#: includes/settings-page.php:32
+#: includes/settings-page.php:73
 #, php-format
 msgid "%1$s ICO"
 msgstr ""
 
-#: includes/settings-page.php:30
-#: includes/settings-page.php:40
-#: includes/settings-page.php:51
+#: includes/settings-page.php:32
+#: includes/settings-page.php:42
+#: includes/settings-page.php:52
+#: includes/settings-page.php:62
 msgid "Frontend"
 msgstr ""
 
-#: includes/settings-page.php:34
-#: includes/settings-page.php:44
-#: includes/settings-page.php:55
-#: includes/settings-page.php:65
-#: includes/settings-page.php:75
-#: includes/settings-page.php:86
+#: includes/settings-page.php:36
+#: includes/settings-page.php:46
+#: includes/settings-page.php:56
+#: includes/settings-page.php:66
+#: includes/settings-page.php:77
+#: includes/settings-page.php:87
+#: includes/settings-page.php:97
+#: includes/settings-page.php:107
 msgid "Upload Favicon"
 msgstr ""
 
-#: includes/settings-page.php:35
-#: includes/settings-page.php:45
-#: includes/settings-page.php:56
-#: includes/settings-page.php:66
-#: includes/settings-page.php:76
-#: includes/settings-page.php:87
+#: includes/settings-page.php:37
+#: includes/settings-page.php:47
+#: includes/settings-page.php:57
+#: includes/settings-page.php:67
+#: includes/settings-page.php:78
+#: includes/settings-page.php:88
+#: includes/settings-page.php:98
+#: includes/settings-page.php:108
 msgid "Enter a URL or upload a Favicon."
 msgstr ""
 
-#: includes/settings-page.php:40
-#: includes/settings-page.php:71
+#: includes/settings-page.php:42
+#: includes/settings-page.php:83
 #, php-format
 msgid "%1$s PNG"
 msgstr ""
 
-#: includes/settings-page.php:51
-#: includes/settings-page.php:82
+#: includes/settings-page.php:52
+#: includes/settings-page.php:93
 #, php-format
 msgid "%1$s GIF"
 msgstr ""
 
-#: includes/settings-page.php:61
-#: includes/settings-page.php:71
-#: includes/settings-page.php:82
+#: includes/settings-page.php:62
+#: includes/settings-page.php:103
+#, php-format
+msgid "%1$s Apple touch icon"
+msgstr ""
+
+#: includes/settings-page.php:73
+#: includes/settings-page.php:83
+#: includes/settings-page.php:93
+#: includes/settings-page.php:103
 msgid "Backend"
 msgstr ""
 
-#: includes/settings-page.php:93
+#: includes/settings-page.php:114
 msgid "Save Changes"
 msgstr ""
 
-#: includes/settings-page.php:102
-#: includes/settings-page.php:111
+#: includes/settings-page.php:123
+#: includes/settings-page.php:132
 msgid "Delete Settings"
 msgstr ""
 
-#: includes/settings-page.php:105
+#: includes/settings-page.php:126
 msgid "Check the box and click this button to delete settings of this plugin."
 msgstr ""
 
-#: includes/settings-page.php:121
+#: includes/settings-page.php:142
 msgid "Tips"
 msgstr ""
 
-#: includes/settings-page.php:127
+#: includes/settings-page.php:148
 msgid "Favicon wikipedia entry"
 msgstr ""
 
-#: includes/settings-page.php:130
+#: includes/settings-page.php:151
 msgid "<a href=\"http://en.wikipedia.org/wiki/Favicon\">Wikipedia</a> offers much information about favicon types and sizes."
 msgstr ""
 
-#: includes/settings-page.php:135
+#: includes/settings-page.php:156
 msgid "Favicon generator"
 msgstr ""
 
-#: includes/settings-page.php:138
+#: includes/settings-page.php:159
 msgid "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> provides a favicon generator that is very easy to use."
 msgstr ""
 
-#: includes/settings-page.php:143
+#: includes/settings-page.php:164
 msgid "Favicon validator"
 msgstr ""
 
-#: includes/settings-page.php:146
+#: includes/settings-page.php:167
 msgid "<a href=\"http://www.html-kit.com/favicon/validator\">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers."
 msgstr ""
 
-#: includes/settings-page.php:156
+#: includes/settings-page.php:172
+msgid "Apple Touch Icon Howto"
+msgstr ""
+
+#: includes/settings-page.php:175
+msgid "<a href=\"http://developer.apple.com/safari/library/documentation/internetweb/conceptual/iPhoneWebAppHIG/MetricsLayout/MetricsLayout.html\">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon."
+msgstr ""
+
+#: includes/settings-page.php:186
+msgid "Top donations"
+msgstr ""
+
+#: includes/settings-page.php:195
+msgid "Latest donations"
+msgstr ""
+
+#: includes/settings-page.php:204
 msgid "Donate"
 msgstr ""
 
-#: includes/settings-page.php:170
+#: includes/settings-page.php:208
 msgid "If you would like to make a small (or large) contribution towards future development please consider making a donation."
 msgstr ""
 
-#: includes/settings-page.php:179
+#: includes/settings-page.php:213
+msgid "Techotronic Development Support"
+msgstr ""
+
+#: includes/settings-page.php:217
+msgid "Please enter the URL you'd like me to link to in the donors lists"
+msgstr ""
+
+#: includes/settings-page.php:219
+msgid "Return to Your Dashboard"
+msgstr ""
+
+#: includes/settings-page.php:223
+msgid "Select Preset Amount"
+msgstr ""
+
+#: includes/settings-page.php:231
+#: includes/settings-page.php:235
+msgid "USD"
+msgstr ""
+
+#: includes/settings-page.php:232
+msgid "Or"
+msgstr ""
+
+#: includes/settings-page.php:233
+msgid "Enter Custom Amount"
+msgstr ""
+
+#: includes/settings-page.php:237
+msgid "Submit"
+msgstr ""
+
+#: includes/settings-page.php:244
 msgid "Translation"
 msgstr ""
 
-#: includes/settings-page.php:182
+#: includes/settings-page.php:247
 msgid "The english translation was done by <a href=\"http://www.techotronic.de\">Arne Franken</a>."
 msgstr ""
 
