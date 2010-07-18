@@ -105,6 +105,10 @@ I'll include new FAQs in every new version. Promise.
 <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">Please visit my site for screenshots</a>.
 
 == Changelog ==
+= 2.2 (2010-07-19) =
+* BUGFIX: Now works with WordPress 3.0 and WPMU enabled
+* NEW: Added latest donations and top donations to settings page
+
 = 2.1 (2010-06-06) =
 * BUGFIX: Fixing bug where favicons would not be displayed in certain cases.
 

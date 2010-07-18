@@ -6,7 +6,7 @@
  * Plugin Name: All in one Favicon
  * Plugin URI: http://www.techotronic.de/plugins/all-in-one-favicon/
  * Description: All in one Favicon management. Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif)
- * Version: 2.1
+ * Version: 2.2
  * Author: Arne Franken
  * Author URI: http://www.techotronic.de/
  * License: GPL
@@ -18,7 +18,7 @@
  */
 
 // define constants
-define('AIOFAVICON_VERSION', '2.1');
+define('AIOFAVICON_VERSION', '2.2');
 
 if (!defined('AIOFAVICON_PLUGIN_BASENAME')) {
     define('AIOFAVICON_PLUGIN_BASENAME', plugin_basename(__FILE__));
@@ -33,27 +33,13 @@ if (!defined('AIOFAVICON_TEXTDOMAIN')) {
     define('AIOFAVICON_TEXTDOMAIN', 'aio-favicon');
 }
 if (!defined('AIOFAVICON_PLUGIN_DIR')) {
-    if (is_dir(WPMU_PLUGIN_DIR)) {
-        // WP_MU plugin
-        define('AIOFAVICON_PLUGIN_DIR', WPMU_PLUGIN_DIR . '/' . AIOFAVICON_PLUGIN_NAME);
-    } else {
-        // WP regular plugin
-        define('AIOFAVICON_PLUGIN_DIR', WP_PLUGIN_DIR . '/' . AIOFAVICON_PLUGIN_NAME);
-    }
+    define('AIOFAVICON_PLUGIN_DIR', WP_PLUGIN_DIR . '/' . AIOFAVICON_PLUGIN_NAME);
 }
 if (!defined('AIOFAVICON_PLUGIN_DIR')) {
-    if (is_dir(WPMU_PLUGIN_DIR)) {
-        define('AIOFAVICON_PLUGIN_DIR', ABSPATH . '/' . MUPLUGINDIR . '/' . AIOFAVICON_PLUGIN_NAME);
-    } else {
-        define('AIOFAVICON_PLUGIN_DIR', ABSPATH . '/' . PLUGINDIR . '/' . AIOFAVICON_PLUGIN_NAME);
-    }
+    define('AIOFAVICON_PLUGIN_DIR', ABSPATH . '/' . PLUGINDIR . '/' . AIOFAVICON_PLUGIN_NAME);
 }
 if (!defined('AIOFAVICON_PLUGIN_URL')) {
-    if (is_dir(WPMU_PLUGIN_DIR)) {
-        define('AIOFAVICON_PLUGIN_URL', WPMU_PLUGIN_URL . '/' . AIOFAVICON_PLUGIN_NAME);
-    } else {
-        define('AIOFAVICON_PLUGIN_URL', WP_PLUGIN_URL . '/' . AIOFAVICON_PLUGIN_NAME);
-    }
+    define('AIOFAVICON_PLUGIN_URL', WP_PLUGIN_URL . '/' . AIOFAVICON_PLUGIN_NAME);
 }
 if (!defined('AIOFAVICON_PLUGIN_LOCALIZATION_DIR')) {
     define('AIOFAVICON_PLUGIN_LOCALIZATION_DIR', AIOFAVICON_PLUGIN_DIR . '/localization');
