@@ -161,7 +161,7 @@
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label for="faviconGenerator"><?php _e('Favicon validator', AIOFAVICON_TEXTDOMAIN); ?>:</label>
+                        <label for="faviconValidator"><?php _e('Favicon validator', AIOFAVICON_TEXTDOMAIN); ?>:</label>
                     </th>
                     <td id="faviconValidator">
                         <?php _e('<a href="http://www.html-kit.com/favicon/validator">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers.',AIOFAVICON_TEXTDOMAIN) ?>
@@ -169,7 +169,7 @@
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label for="faviconGenerator"><?php _e('Apple Touch Icon Howto', AIOFAVICON_TEXTDOMAIN); ?>:</label>
+                        <label for="faviconAppleHowto"><?php _e('Apple Touch Icon Howto', AIOFAVICON_TEXTDOMAIN); ?>:</label>
                     </th>
                     <td id="faviconAppleHowto">
                         <?php _e('<a href="http://developer.apple.com/safari/library/documentation/internetweb/conceptual/iPhoneWebAppHIG/MetricsLayout/MetricsLayout.html">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon.',AIOFAVICON_TEXTDOMAIN) ?>
@@ -252,7 +252,7 @@
     </div>
     <div class="clear">
         <p>
-            <br/>&copy; Copyright 2009 - <?php echo date("Y"); ?> <a href="http://www.techotronic.de">Arne Franken</a>
+            <br/>&copy; Copyright 2010 - <?php echo date("Y"); ?> <a href="http://www.techotronic.de">Arne Franken</a>
         </p>
     </div>
 
