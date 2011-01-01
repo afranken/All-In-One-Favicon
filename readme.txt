@@ -20,15 +20,13 @@ See <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">plugin page<
 
 Localization
 
-* Arabic (ar) - about 50% missing
-* Belorussian (be_BY) - about 50% missing
-* Bosnian (bs_BA) - about 50% missing
+* Bahasa Indonesia (id_ID) by <a href="http://movableid.com/">EKO</a>
+* Danish (da_DK) by <a href="http://wordpress.blogos.dk/">GeorgWP</a>
 * English (en_EN) by <a href="http://www.techotronic.de/">Arne Franken</a>
-* French (fr_FR) - about 50% missing
 * German (de_DE) by <a href="http://www.techotronic.de/">Arne Franken</a>
-* Portuguese (pt_BR) - about 50% missing
-* Russian (ru_RU) - about 50% missing
-* Turkish (tr_TR) - about 50% missing
+* Italian (it_IT) by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
+* Polish (pl_PL) by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
+* Swedish (sv_SE) by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
 
 Is your native language missing? Translating the plugin is easy if you understand english and are fluent in another language. Just send me an email.
 
@@ -105,6 +103,13 @@ I'll include new FAQs in every new version. Promise.
 <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">Please visit my site for screenshots</a>.
 
 == Changelog ==
+= 2.3 (2011-01-02) =
+* NEW: Danish translation by <a href="http://wordpress.blogos.dk/">GeorgWP</a>
+* NEW: Bahasa Indonesia translation by <a href="http://movableid.com/">EKO</a>
+* NEW: Polish translation by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
+* NEW: Swedish translation by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
+* NEW: Italian translation by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
+
 = 2.2 (2010-07-19) =
 * BUGFIX: Now works with WordPress 3.0 and WPMU enabled
 * NEW: Added latest donations and top donations to settings page
