@@ -22,11 +22,7 @@ jQuery(document).ready(function($) {
     
     window.send_to_editor = function(html) {
         imgurl = jQuery('img',html).attr('src');
-        $test = jQuery("#aio-favicon_settings-backendGIF").val();
-        $textvalBefore = jQuery("input"+"#"+textInputId).val();
         jQuery("input"+"#"+textInputId).val(imgurl);
-        $textvalAfter = jQuery("input"+"#"+textInputId).val();
-        $a = 'asdf';
         tb_remove();
     }
 });
