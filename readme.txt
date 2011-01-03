@@ -16,7 +16,7 @@ You can either use favicons you already uploaded or use the builtin upload mecha
 All three favicon types are supported - .ico, .png and .gif (may be animated)
 Also, Apple Touch Icons are supported.
 
-See <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">plugin page</a> for more information and screenshots.
+See <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">plugin page</a> for more information, a "first steps" guide and screenshots.
 
 Localization
 
@@ -47,6 +47,10 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 **See Also:** <a href="http://codex.wordpress.org/Managing_Plugins#Installing_Plugins">"Installing Plugins" article on the WP Codex</a>
 
 == Frequently Asked Questions ==
+
+* When I try to upload a favicon, I get the error: "File type does not meet security guidelines. Try another.”
+
+You are probably using a WordPress Multisite installation? Then you'll need to add "ico" to the allowed file types property on the "Super Admin -> Options" page.
 
 * Why is All In One Favicon not available in my language?
 
@@ -104,6 +108,7 @@ I'll include new FAQs in every new version. Promise.
 
 == Changelog ==
 = 2.3 (2011-01-02) =
+* BUGFIX: Now REALLY works with WordPress 3.0 and Multisite enabled.
 * NEW: Danish translation by <a href="http://wordpress.blogos.dk/">GeorgWP</a>
 * NEW: Bahasa Indonesia translation by <a href="http://movableid.com/">EKO</a>
 * NEW: Polish translation by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
