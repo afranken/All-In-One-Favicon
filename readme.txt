@@ -26,6 +26,7 @@ Localization
 * German (de_DE) by <a href="http://www.techotronic.de/">Arne Franken</a>
 * Italian (it_IT) by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
 * Polish (pl_PL) by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
+* Spanish (es_ES) by <a href="mailto:jppm30@gmail.com">Juan Pablo Pérez Manes</a>
 * Swedish (sv_SE) by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
 
 Is your native language missing? Translating the plugin is easy if you understand english and are fluent in another language. Just send me an email.
@@ -114,6 +115,7 @@ I'll include new FAQs in every new version. Promise.
 * NEW: Polish translation by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
 * NEW: Swedish translation by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
 * NEW: Italian translation by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
+* NEW: Spanish translation by <a href="mailto:jppm30@gmail.com">Juan Pablo Pérez Manes</a>
 
 = 2.2 (2010-07-19) =
 * BUGFIX: Now works with WordPress 3.0 and WPMU enabled
