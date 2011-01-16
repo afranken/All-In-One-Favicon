@@ -1,7 +1,7 @@
 === All In One Favicon ===
 Contributors: techotronic
 Donate link: http://www.techotronic.de/donate/
-Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, mu, iphone
+Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, iphone, multisite
 Requires at least: 2.8
 Tested up to: 3.0
 Stable tag: 2.1
@@ -108,17 +108,15 @@ I'll include new FAQs in every new version. Promise.
 <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">Please visit my site for screenshots</a>.
 
 == Changelog ==
-= 2.3 (2011-01-02) =
-* BUGFIX: Now REALLY works with WordPress 3.0 and Multisite enabled.
+= 2.2 (2011-01-15) =
+* NEW: Added option to remove link from meta box.
+* BUGFIX: Fixed a bug where the plugin would break WordPress 3.0 with Multisite enabled.
 * NEW: Danish translation by <a href="http://wordpress.blogos.dk/">GeorgWP</a>
 * NEW: Bahasa Indonesia translation by <a href="http://movableid.com/">EKO</a>
 * NEW: Polish translation by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
 * NEW: Swedish translation by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
 * NEW: Italian translation by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
 * NEW: Spanish translation by <a href="mailto:jppm30@gmail.com">Juan Pablo Pérez Manes</a>
-
-= 2.2 (2010-07-19) =
-* BUGFIX: Now works with WordPress 3.0 and WPMU enabled
 * NEW: Added latest donations and top donations to settings page
 
 = 2.1 (2010-06-06) =
