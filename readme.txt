@@ -4,7 +4,7 @@ Donate link: http://www.techotronic.de/donate/
 Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, iphone, multisite
 Requires at least: 2.8
 Tested up to: 3.0
-Stable tag: 2.1
+Stable tag: 3.0
 
 Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).
 
@@ -108,16 +108,16 @@ I'll include new FAQs in every new version. Promise.
 <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">Please visit my site for screenshots</a>.
 
 == Changelog ==
-= 2.2 (2011-01-15) =
+= 3.0 (2011-01-15) =
 * NEW: Added option to remove link from meta box.
 * BUGFIX: Fixed a bug where the plugin would break WordPress 3.0 with Multisite enabled.
+* NEW: Added latest donations and top donations to settings page
 * NEW: Danish translation by <a href="http://wordpress.blogos.dk/">GeorgWP</a>
 * NEW: Bahasa Indonesia translation by <a href="http://movableid.com/">EKO</a>
 * NEW: Polish translation by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
 * NEW: Swedish translation by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
 * NEW: Italian translation by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
 * NEW: Spanish translation by <a href="mailto:jppm30@gmail.com">Juan Pablo Pérez Manes</a>
-* NEW: Added latest donations and top donations to settings page
 
 = 2.1 (2010-06-06) =
 * BUGFIX: Fixing bug where favicons would not be displayed in certain cases.
