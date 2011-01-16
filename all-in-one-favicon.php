@@ -63,7 +63,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function allInOneFavicon(){
+    //public function allInOneFavicon(){
+    function allInOneFavicon(){
 
         load_plugin_textdomain(AIOFAVICON_TEXTDOMAIN, false, '/all-in-one-favicon/localization/');
 
@@ -107,7 +108,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function renderMetaLink() { ?>
+    //public function renderMetaLink() {
+    function renderMetaLink() { ?>
         <li><?php _e('Using',AIOFAVICON_TEXTDOMAIN);?> <a href="http://www.techotronic.de/plugins/all-in-one-favicon/" title="<?php echo AIOFAVICON_NAME ?>"><?php echo AIOFAVICON_NAME ?></a></li>
     <?php }
 
@@ -120,7 +122,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function registerAdminScripts() {
+    //public function registerAdminScripts() {
+    function registerAdminScripts() {
         wp_enqueue_script('media-upload');
         wp_enqueue_script('thickbox');
         wp_register_script('aioFaviconUpload', AIOFAVICON_PLUGIN_URL .'/js/backend.js', array('jquery','media-upload','thickbox'));
@@ -136,7 +139,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function registerAdminStyles() {
+    //public function registerAdminStyles() {
+    function registerAdminStyles() {
         wp_enqueue_style('thickbox');
     }
 
@@ -149,7 +153,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function renderSettingsPage() {
+    //public function renderSettingsPage() {
+    function renderSettingsPage() {
         include_once 'includes/settings-page.php';
     }
 
@@ -162,7 +167,8 @@ class AllInOneFavicon {
      * @access private
      * @author Arne Franken
      */
-    private function registerSettingsPage() {
+    //private function registerSettingsPage() {
+    function registerSettingsPage() {
         if (current_user_can('manage_options')) {
             add_options_page(AIOFAVICON_NAME, AIOFAVICON_NAME, 'manage_options', AIOFAVICON_PLUGIN_BASENAME, array(& $this, 'renderSettingsPage'));
         }
@@ -177,7 +183,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function registerAdminMenu() {
+    //public function registerAdminMenu() {
+    function registerAdminMenu() {
         if (function_exists('add_management_page') && current_user_can('manage_options')) {
 
             // update, uninstall message
@@ -203,7 +210,8 @@ class AllInOneFavicon {
      * @access private
      * @author Arne Franken
      */
-    private function registerAdminNotice($notice) {
+    //private function registerAdminNotice($notice) {
+    function registerAdminNotice($notice) {
         if ($notice != '') {
             $message = '<div class="updated fade"><p>' . $notice . '</p></div>';
             add_action('admin_notices', create_function('', "echo '$message';"));
@@ -219,7 +227,8 @@ class AllInOneFavicon {
      * @access private
      * @author Arne Franken
      */
-    private function aioFaviconDefaultSettings() {
+    //private function aioFaviconDefaultSettings() {
+    function aioFaviconDefaultSettings() {
 
         // Create and return array of default settings
         return array(
@@ -240,7 +249,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function aioFaviconUpdateSettings() {
+    //public function aioFaviconUpdateSettings() {
+    function aioFaviconUpdateSettings() {
 
         if (!current_user_can('manage_options'))
             wp_die(__('Did not update settings, you do not have the necessary rights.', AIOFAVICON_TEXTDOMAIN));
@@ -267,7 +277,8 @@ class AllInOneFavicon {
      * @access private
      * @author Arne Franken
      */
-    private function updateSettingsInDatabase() {
+    //private function updateSettingsInDatabase() {
+    function updateSettingsInDatabase() {
         update_option(AIOFAVICON_SETTINGSNAME, $this->aioFaviconSettings);
     }
 
@@ -283,7 +294,8 @@ class AllInOneFavicon {
      * @access public
      * @author Arne Franken
      */
-    public function aioFaviconDeleteSettings() {
+    //public function aioFaviconDeleteSettings() {
+    function aioFaviconDeleteSettings() {
 
         if (current_user_can('manage_options') && isset($_POST['delete_settings-true'])) {
             //cross check the given referer for nonce set in delete settings form
@@ -308,7 +320,8 @@ class AllInOneFavicon {
      * @access private
      * @author Arne Franken
      */
-    private function deleteSettingsFromDatabase() {
+    //private function deleteSettingsFromDatabase() {
+    function deleteSettingsFromDatabase() {
         delete_option(AIOFAVICON_SETTINGSNAME);
     }
 
@@ -324,7 +337,8 @@ class AllInOneFavicon {
      * @param string $url
      * @return the response
      */
-    private function getRemoteContent($url) {
+    //private function getRemoteContent($url) {
+    function getRemoteContent($url) {
         if ( function_exists('wp_remote_request') ) {
 
             $options = array();
@@ -355,7 +369,8 @@ class AllInOneFavicon {
      * @access private
      * @author Arne Franken
      */
-    private function getReturnLocation(){
+    //private function getReturnLocation(){
+    function getReturnLocation(){
         $currentLocation = "http";
         $currentLocation .= ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on') ? "s" : "")."://";
         $currentLocation .= $_SERVER['SERVER_NAME'];

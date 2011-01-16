@@ -108,6 +108,9 @@ I'll include new FAQs in every new version. Promise.
 <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">Please visit my site for screenshots</a>.
 
 == Changelog ==
+= 3.1 (2011-01-16) =
+* CHANGE: made plugin compatible to PHP4
+
 = 3.0 (2011-01-15) =
 * NEW: Added option to remove link from meta box.
 * BUGFIX: Fixed a bug where the plugin would break WordPress 3.0 with Multisite enabled.
