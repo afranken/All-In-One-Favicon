@@ -73,7 +73,10 @@ class AllInOneFavicon {
         add_action('admin_post_aioFaviconDeleteSettings', array(& $this, 'aioFaviconDeleteSettings'));
         add_action('admin_post_aioFaviconUpdateSettings', array(& $this, 'aioFaviconUpdateSettings'));
 
-        $this->aioFaviconSettings = (array)get_option(AIOFAVICON_SETTINGSNAME);
+        // Create the settings array by merging the user's settings and the defaults
+        $usersettings = (array) get_option(AIOFAVICON_SETTINGSNAME);
+        $defaultArray = $this->aioFaviconDefaultSettings();
+        $this->aioFaviconSettings = wp_parse_args($usersettings, $defaultArray);
 
         if(!is_admin()){
             require_once 'includes/header-blog.php';
@@ -89,7 +92,10 @@ class AllInOneFavicon {
             add_action('admin_print_styles', array(& $this, 'registerAdminStyles'));
         }
 
-        add_action('wp_meta',array(& $this, 'renderMetaLink'));
+                //only add link to meta box
+        if(isset($this->aioFaviconSettings['removeLinkFromMetaBox']) && !$this->aioFaviconSettings['removeLinkFromMetaBox']){
+            add_action('wp_meta',array(& $this, 'renderMetaLink'));
+        }
     }
 
     // allInOneFavicon()
@@ -205,6 +211,25 @@ class AllInOneFavicon {
     }
 
     // registerAdminNotice()
+
+    /**
+     * Default array of All In One Favicon settings
+     *
+     * @since 1.0
+     * @access private
+     * @author Arne Franken
+     */
+    private function aioFaviconDefaultSettings() {
+
+        // Create and return array of default settings
+        return array(
+            'aioFaviconVersion' => AIOFAVICON_VERSION,
+            'debugMode' => false,
+            'removeLinkFromMetaBox' => false
+        );
+    }
+
+    // aioFaviconDefaultSettings()
 
     /**
      * Update jQuery Colorbox settings wrapper
