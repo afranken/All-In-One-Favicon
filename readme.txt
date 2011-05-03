@@ -110,6 +110,8 @@ I'll include new FAQs in every new version. Promise.
 == Changelog ==
 = 3.2 (2011-03-00) =
 * CHANGE: fixed link to Apple Touch Icon howto
+* CHANGE: Major refactoring, hopefully speeds up frontend and backend rendering
+* CHANGE: Render Meta-Tag with plugin version into blog header instead of comments
 
 = 3.1 (2011-01-16) =
 * CHANGE: made plugin compatible to PHP4
