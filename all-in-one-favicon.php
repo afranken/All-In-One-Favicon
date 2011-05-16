@@ -6,7 +6,7 @@
  * Plugin Name: All in one Favicon
  * Plugin URI: http://www.techotronic.de/plugins/all-in-one-favicon/
  * Description: All in one Favicon management. Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif)
- * Version: 3.2
+ * Version: 4.0
  * Author: Arne Franken
  * Author URI: http://www.techotronic.de/
  * License: GPL
@@ -18,37 +18,37 @@
  */
 
 // define constants
-define('AIOFAVICON_VERSION', '3.2');
+define('AIOFAVICON_VERSION', '4.0');
 
 if (!defined('AIOFAVICON_PLUGIN_BASENAME')) {
-    define('AIOFAVICON_PLUGIN_BASENAME', plugin_basename(__FILE__));
+  define('AIOFAVICON_PLUGIN_BASENAME', plugin_basename(__FILE__));
 }
 if (!defined('AIOFAVICON_PLUGIN_NAME')) {
-    define('AIOFAVICON_PLUGIN_NAME', trim(dirname(AIOFAVICON_PLUGIN_BASENAME), '/'));
+  define('AIOFAVICON_PLUGIN_NAME', trim(dirname(AIOFAVICON_PLUGIN_BASENAME), '/'));
 }
 if (!defined('AIOFAVICON_NAME')) {
-    define('AIOFAVICON_NAME', 'All in one Favicon');
+  define('AIOFAVICON_NAME', 'All in one Favicon');
 }
 if (!defined('AIOFAVICON_TEXTDOMAIN')) {
-    define('AIOFAVICON_TEXTDOMAIN', 'aio-favicon');
+  define('AIOFAVICON_TEXTDOMAIN', 'aio-favicon');
 }
 if (!defined('AIOFAVICON_PLUGIN_DIR')) {
-    define('AIOFAVICON_PLUGIN_DIR', dirname(__FILE__));
+  define('AIOFAVICON_PLUGIN_DIR', dirname(__FILE__));
 }
 if (!defined('AIOFAVICON_PLUGIN_URL')) {
-    define('AIOFAVICON_PLUGIN_URL', WP_PLUGIN_URL . '/' . AIOFAVICON_PLUGIN_NAME);
+  define('AIOFAVICON_PLUGIN_URL', WP_PLUGIN_URL . '/' . AIOFAVICON_PLUGIN_NAME);
 }
 if (!defined('AIOFAVICON_PLUGIN_LOCALIZATION_DIR')) {
-    define('AIOFAVICON_PLUGIN_LOCALIZATION_DIR', AIOFAVICON_PLUGIN_DIR . '/localization');
+  define('AIOFAVICON_PLUGIN_LOCALIZATION_DIR', AIOFAVICON_PLUGIN_DIR . '/localization');
 }
 if (!defined('AIOFAVICON_SETTINGSNAME')) {
-    define('AIOFAVICON_SETTINGSNAME', 'aio-favicon_settings');
+  define('AIOFAVICON_SETTINGSNAME', 'aio-favicon_settings');
 }
 if (!defined('AIOFAVICON_LATESTDONATEURL')) {
-    define('AIOFAVICON_LATESTDONATEURL', 'http://favicon.techotronic.de/latest-donations.php');
+  define('AIOFAVICON_LATESTDONATEURL', 'http://favicon.techotronic.de/latest-donations.php');
 }
 if (!defined('AIOFAVICON_TOPDONATEURL')) {
-    define('AIOFAVICON_TOPDONATEURL', 'http://favicon.techotronic.de/top-donations.php');
+  define('AIOFAVICON_TOPDONATEURL', 'http://favicon.techotronic.de/top-donations.php');
 }
 
 /**
@@ -59,95 +59,95 @@ if (!defined('AIOFAVICON_TOPDONATEURL')) {
  */
 class AllInOneFavicon {
 
-    /**
-     * Plugin initialization
-     *
-     * @since 1.0
-     * @access public
-     * @author Arne Franken
-     */
-    //public function AllInOneFavicon(){
-    function AllInOneFavicon(){
-        if (!function_exists('plugins_url')) {
-            return;
-        }
-
-        load_plugin_textdomain(AIOFAVICON_TEXTDOMAIN, false, '/all-in-one-favicon/localization/');
-
-        //register method for uninstall
-        if (function_exists('register_uninstall_hook')) {
-            register_uninstall_hook(__FILE__, array('AllInOneFavicon', 'uninstallAioFavicon'));
-        }
-
-        // Create the settings array by merging the user's settings and the defaults
-        $usersettings = (array) get_option(AIOFAVICON_SETTINGSNAME);
-        $defaultArray = $this->aioFaviconDefaultSettings();
-        $this->aioFaviconSettings = wp_parse_args($usersettings, $defaultArray);
-
-        if(is_admin()){
-            require_once 'includes/aio-favicon-backend.php';
-            new AioFaviconBackend($this->aioFaviconSettings);
-        } else if (!is_admin()){
-            require_once 'includes/aio-favicon-frontend.php';
-            new AioFaviconFrontend($this->aioFaviconSettings);
-        }
-
+  /**
+   * Plugin initialization
+   *
+   * @since 1.0
+   * @access public
+   * @author Arne Franken
+   */
+  //public function AllInOneFavicon(){
+  function AllInOneFavicon() {
+    if (!function_exists('plugins_url')) {
+      return;
     }
 
-    // allInOneFavicon()
+    load_plugin_textdomain(AIOFAVICON_TEXTDOMAIN, false, '/all-in-one-favicon/localization/');
 
-    /**
-     * Default array of All In One Favicon settings
-     *
-     * @since 3.0
-     * @access private
-     * @static
-     * @author Arne Franken
-     *
-     * @return array of default settings
-     */
-    //private function aioFaviconDefaultSettings() {
-    function aioFaviconDefaultSettings() {
-
-        // Create and return array of default settings
-        return array(
-            'aioFaviconVersion' => AIOFAVICON_VERSION,
-            'debugMode' => false,
-            'removeLinkFromMetaBox' => false
-        );
+    //register method for uninstall
+    if (function_exists('register_uninstall_hook')) {
+      register_uninstall_hook(__FILE__, array('AllInOneFavicon', 'uninstallAioFavicon'));
     }
 
-    // aioFaviconDefaultSettings()
+    // Create the settings array by merging the user's settings and the defaults
+    $usersettings = (array)get_option(AIOFAVICON_SETTINGSNAME);
+    $defaultArray = $this->aioFaviconDefaultSettings();
+    $this->aioFaviconSettings = wp_parse_args($usersettings, $defaultArray);
 
-    /**
-     * Delete jQuery Tinytips settings
-     *
-     * handles deletion from WordPress database
-     *
-     * @since 1.3
-     * @access private
-     * @author Arne Franken
-     */
-    //private function uninstallAioFavicon() {
-    function uninstallAioFavicon() {
-        delete_option(AIOFAVICON_SETTINGSNAME);
+    if (is_admin()) {
+      require_once 'includes/aio-favicon-backend.php';
+      new AioFaviconBackend($this->aioFaviconSettings, $this->aioFaviconDefaultSettings());
+    } else if (!is_admin()) {
+      require_once 'includes/aio-favicon-frontend.php';
+      new AioFaviconFrontend($this->aioFaviconSettings);
     }
 
-    // uninstallAioFavicon()
+  }
 
-    /**
-     * executed during activation.
-     *
-     * @since 1.0
-     * @access public
-     * @author Arne Franken
-     */
-    //public function activateAioFavicon() {
-    function activateAioFavicon() {
-        //do nothing at the moment
-    }
+  // AllInOneFavicon()
 
-    // activateAioFavicon()
+  /**
+   * Default array of All In One Favicon settings
+   *
+   * @since 3.0
+   * @access private
+   * @static
+   * @author Arne Franken
+   *
+   * @return array of default settings
+   */
+  //private function aioFaviconDefaultSettings() {
+  function aioFaviconDefaultSettings() {
+
+    // Create and return array of default settings
+    return array(
+      'aioFaviconVersion' => AIOFAVICON_VERSION,
+      'debugMode' => false,
+      'removeLinkFromMetaBox' => false
+    );
+  }
+
+  // aioFaviconDefaultSettings()
+
+  /**
+   * Delete jQuery Tinytips settings
+   *
+   * handles deletion from WordPress database
+   *
+   * @since 1.3
+   * @access private
+   * @author Arne Franken
+   */
+  //private function uninstallAioFavicon() {
+  function uninstallAioFavicon() {
+    delete_option(AIOFAVICON_SETTINGSNAME);
+  }
+
+  // uninstallAioFavicon()
+
+  /**
+   * executed during activation.
+   *
+   * @since 1.0
+   * @access public
+   * @author Arne Franken
+   */
+  //public function activateAioFavicon() {
+  function activateAioFavicon() {
+    //do nothing at the moment
+  }
+
+  // activateAioFavicon()
 
 }
 
@@ -161,8 +161,7 @@ class AllInOneFavicon {
  * @author Arne Franken
  */
 function initAioFavicon() {
-    global $allInOneFavicon;
-    $allInOneFavicon = new AllInOneFavicon();
+  new AllInOneFavicon();
 }
 
 //initAioFavicon()
