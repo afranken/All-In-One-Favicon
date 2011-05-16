@@ -10,8 +10,6 @@
  */
 class AioFaviconBackend {
 
-  var $debugger;
-
   /**
    * Constructor
    *
@@ -27,10 +25,6 @@ class AioFaviconBackend {
    */
   //public static function AioFaviconBackend($aioFaviconSettings) {
   function AioFaviconBackend($aioFaviconSettings, $aioFaviconDefaultSettings) {
-
-//    global $debugger;
-//    require_once('debugger.php');
-//    $debugger = new Debugger();
 
     $this->aioFaviconSettings = $aioFaviconSettings;
     $this->aioFaviconDefaultSettings = $aioFaviconDefaultSettings;
@@ -236,7 +230,6 @@ class AioFaviconBackend {
    */
   //public function aioFaviconUpdateSettings() {
   function aioFaviconUpdateSettings() {
-    //global $debugger;
     if (!current_user_can('manage_options'))
       wp_die(__('Did not update settings, you do not have the necessary rights.', AIOFAVICON_TEXTDOMAIN));
 
@@ -251,19 +244,59 @@ class AioFaviconBackend {
     // handle file upload
     $overrides = array('action' => 'aioFaviconUpdateSettings');
     foreach ($_FILES as $icoName => $icoArray) {
-
       $file = wp_handle_upload($_FILES[$icoName], $overrides);
       if (isset($file['url'])) {
         $this->aioFaviconSettings[$icoName] = $file['url'];
-        //$debugger->dieWithVariable($this->aioFaviconSettings);
       }
     }
+
+    // delete files if checkboxes are checked
+    foreach ($_POST as $key => $value) {
+      if (preg_match('/delete-(.*)/i', $key, $matches)) {
+        if(count($matches)>1){
+          $match = $matches[1];
+          $this->deleteFile($match);
+        }
+      }
+    }
+
+    //$debugger->dieWithVariable($_POST);
+
     $this->updateSettingsInDatabase();
     $referrer = str_replace(array('&aioFaviconUpdateSettings', '&aioFaviconDeleteSettings'), '', $_POST['_wp_http_referer']);
     wp_redirect($referrer . '&aioFaviconUpdateSettings');
   }
 
   // aioFaviconUpdateSettings()
+
+  /**
+   * Delete favicon file
+   *
+   * @since 4.0
+   * @access private
+   * @author Arne Franken
+   *
+   * @param String $faviconName
+   * 
+   * @return void
+   */
+  function deleteFile($faviconName) {
+    $url = $this->aioFaviconSettings[$faviconName];
+    if($url !='') {
+      $uploads = wp_upload_dir();
+      $regex = '#'.$uploads['baseurl'].'/(.*)#i';
+      preg_match($regex,$url,$relativePath);
+      if(count($relativePath)>1){
+        $pathToFile = $uploads['basedir'] .'/' . $relativePath[1];
+        @ unlink($pathToFile);
+      }
+    }
+
+    //delete setting
+    $this->aioFaviconSettings[$faviconName] = '';
+  }
+
+  // deleteFile()
 
   /**
    * Update jQuery Colorbox settings

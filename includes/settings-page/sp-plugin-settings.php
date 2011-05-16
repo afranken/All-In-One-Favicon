@@ -25,7 +25,8 @@
             <div id="frontendICO-favicon"></div>
           </td>
           <td>
-            <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendICO" type="file" size="50" maxlength="100000" accept="text/*" name="frontendICO" value="<?php echo $this->aioFaviconSettings['frontendICO'] ?>"/>
+            <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendICO" type="file" size="50" maxlength="100000" accept="text/*" name="frontendICO" value="<?php echo $this->aioFaviconSettings['frontendICO'] ?>" src="<?php echo $this->aioFaviconSettings['frontendICO'] ?>"/>
+            <br /><input type="checkbox" name="delete-frontendICO"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
@@ -37,6 +38,7 @@
           </td>
           <td>
             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendPNG" type="file" size="50" maxlength="100000" accept="text/*" name="frontendPNG" value="<?php echo $this->aioFaviconSettings['frontendPNG'] ?>"/>
+            <br /><input type="checkbox" name="delete-frontendPNG"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
@@ -48,6 +50,7 @@
           </td>
           <td>
             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendGIF" type="file" size="50" maxlength="100000" accept="text/*" name="frontendGIF" value="<?php echo $this->aioFaviconSettings['frontendGIF'] ?>"/>
+            <br /><input type="checkbox" name="delete-frontendGIF"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
@@ -59,7 +62,7 @@
           </td>
           <td>
             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-frontendApple" type="file" size="50" maxlength="100000" accept="text/*" name="frontendApple" value="<?php echo $this->aioFaviconSettings['frontendApple'] ?>"/>
-
+            <br /><input type="checkbox" name="delete-frontendApple"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
@@ -71,6 +74,7 @@
           </td>
           <td>
             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendICO" type="file" size="50" maxlength="100000" accept="text/*" name="backendICO" value="<?php echo $this->aioFaviconSettings['backendICO'] ?>"/>
+            <br /><input type="checkbox" name="delete-backendICO"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
@@ -82,6 +86,7 @@
           </td>
           <td>
             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendPNG" type="file" size="50" maxlength="100000" accept="text/*" name="backendPNG" value="<?php echo $this->aioFaviconSettings['backendPNG'] ?>"/>
+            <br /><input type="checkbox" name="delete-backendPNG"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
@@ -93,6 +98,7 @@
           </td>
           <td>
             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendGIF" type="file" size="50" maxlength="100000" accept="text/*" name="backendGIF" value="<?php echo $this->aioFaviconSettings['backendGIF'] ?>"/>
+            <br /><input type="checkbox" name="delete-backendGIF"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
@@ -104,6 +110,7 @@
           </td>
           <td>
             <input id="<?php echo AIOFAVICON_SETTINGSNAME ?>-backendApple" type="file" size="50" maxlength="100000" accept="text/*" name="backendApple" value="<?php echo $this->aioFaviconSettings['backendApple'] ?>"/>
+            <br /><input type="checkbox" name="delete-backendApple"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
         <tr>
