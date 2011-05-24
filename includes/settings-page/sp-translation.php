@@ -10,7 +10,7 @@
  */
 ?>
 <div id="poststuff">
-  <div id="jquery-colorbox-translation" class="postbox">
+  <div id="aio-favicon-translation" class="postbox">
     <h3 id="translation"><?php _e('Translation', AIOFAVICON_TEXTDOMAIN) ?></h3>
 
     <div class="inside">

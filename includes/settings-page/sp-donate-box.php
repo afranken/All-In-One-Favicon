@@ -10,7 +10,7 @@
  */
 ?>
 <div id="poststuff">
-  <div id="jquery-colorbox-donate" class="postbox">
+  <div id="aio-favicon-donate" class="postbox">
     <h3 id="donate"><?php _e('Donate', AIOFAVICON_TEXTDOMAIN) ?></h3>
 
     <div class="inside">
@@ -22,7 +22,7 @@
         <input type="hidden" name="cmd" value="_xclick"/>
         <input type="hidden" name="business" value="G75G3Z6PQWXXQ"/>
         <input type="hidden" name="item_name" value="<?php _e('Techotronic Development Support', AIOFAVICON_TEXTDOMAIN); ?>"/>
-        <input type="hidden" name="item_number" value="jQuery Colorbox"/>
+        <input type="hidden" name="item_number" value="<?php echo AIOFAVICON_NAME ?>"/>
         <input type="hidden" name="no_shipping" value="0"/>
         <input type="hidden" name="no_note" value="0"/>
         <input type="hidden" name="cn" value="<?php _e("Please enter the URL you'd like me to link to in the donors lists", AIOFAVICON_TEXTDOMAIN); ?>."/>
