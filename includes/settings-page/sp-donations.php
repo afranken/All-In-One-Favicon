@@ -10,20 +10,28 @@
  */
 ?>
 <div id="poststuff">
-  <div id="jquery-colorbox-topdonations" class="postbox">
-    <h3 id="topdonations"><?php _e('Top donations', AIOFAVICON_TEXTDOMAIN) ?></h3>
+  <div id="aio-favicon-topdonations" class="postbox">
+    <h3><?php _e('Top donations', AIOFAVICON_TEXTDOMAIN) ?></h3>
 
     <div class="inside">
-      <?php echo $this->getRemoteContent(AIOFAVICON_TOPDONATEURL); ?>
+      <div id="topdonations">
+        <div id="toploader" align="center"><img src="<?php echo AIOFAVICON_PLUGIN_URL ?>/images/ajax-loader.gif" alt="loading"/></div>
+        <div id="topdonationslist" style="display: none;"></div>
+        <div id="toperror" style="display: none;"><p><?php _e('Thank you for your donation.', AIOFAVICON_TEXTDOMAIN) ?></p></div>
+      </div>
     </div>
   </div>
 </div>
 <div id="poststuff">
-  <div id="jquery-colorbox-latestdonations" class="postbox">
-    <h3 id="latestdonations"><?php _e('Latest donations', AIOFAVICON_TEXTDOMAIN) ?></h3>
+  <div id="aio-favicon-latestdonations" class="postbox">
+    <h3><?php _e('Latest donations', AIOFAVICON_TEXTDOMAIN) ?></h3>
 
     <div class="inside">
-      <?php echo $this->getRemoteContent(AIOFAVICON_LATESTDONATEURL); ?>
+      <div id="latestdonations">
+        <div id="latestloader" align="center"><img src="<?php echo AIOFAVICON_PLUGIN_URL ?>/images/ajax-loader.gif" alt="loading"/></div>
+        <div id="latestdonationslist" style="display: none;"></div>
+        <div id="latesterror" style="display: none;"><p><?php _e('Thank you for your donation.', AIOFAVICON_TEXTDOMAIN) ?></p></div>
+      </div>
     </div>
   </div>
 </div>

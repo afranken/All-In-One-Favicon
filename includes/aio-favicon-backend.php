@@ -37,7 +37,14 @@ class AioFaviconBackend {
     add_action('admin_post_aioFaviconDeleteSettings', array(& $this, 'aioFaviconDeleteSettings'));
     add_action('admin_post_aioFaviconUpdateSettings', array(& $this, 'aioFaviconUpdateSettings'));
 
-    $this->buildBackendJavaScriptArray();
+    require_once 'donationloader.php';
+    $donationLoader = new Donationloader();
+
+    //only load JavaScript if we are on this plugin's settingspage
+    if (isset($_GET['page']) && $_GET['page'] == 'all-in-one-favicon/all-in-one-favicon.php') {
+      add_action('admin_print_scripts', array(& $donationLoader, 'registerDonationJavaScript'));
+      add_action('admin_print_scripts', array(& $this, 'registerAdminScripts'));
+    }
   }
 
   // AioFaviconBackend()
@@ -53,7 +60,7 @@ class AioFaviconBackend {
    *
    * @return void
    */
-  function buildBackendJavaScriptArray() {
+  function registerAdminScripts() {
     $backendJavaScriptArray = array();
     if (!empty($this->aioFaviconSettings)) {
       foreach ((array)$this->aioFaviconSettings as $type => $url) {
@@ -69,7 +76,7 @@ class AioFaviconBackend {
     wp_localize_script('aiofavicon', 'Aiofavicon', $backendJavaScriptArray);
   }
 
-  // buildBackendJavaScriptArray()
+  // registerAdminScripts()
 
   /**
    * Renders Favicon
@@ -218,7 +225,7 @@ class AioFaviconBackend {
   // registerAdminNotice()
 
   /**
-   * Update jQuery Colorbox settings wrapper
+   * Update plugin settings wrapper
    *
    * handles checks and redirect
    *
@@ -299,7 +306,7 @@ class AioFaviconBackend {
   // deleteFile()
 
   /**
-   * Update jQuery Colorbox settings
+   * Update plugin settings
    *
    * handles updating settings in the WordPress database
    *
@@ -317,7 +324,7 @@ class AioFaviconBackend {
   //updateSettingsInDatabase()
 
   /**
-   * Delete jQuery Colorbox settings wrapper
+   * Delete plugin settings wrapper
    *
    * handles checks and redirect
    *
@@ -345,7 +352,7 @@ class AioFaviconBackend {
   // aioFaviconDeleteSettings()
 
   /**
-   * Delete jQuery Colorbox settings
+   * Delete plugin settings
    *
    * handles deletion from WordPress database
    *
@@ -377,10 +384,7 @@ class AioFaviconBackend {
   function getRemoteContent($url) {
     if (function_exists('wp_remote_request')) {
 
-      $options = array();
-      $options['headers'] = array(
-        'User-Agent' => 'All-in-One Favicon V' . AIOFAVICON_VERSION . '; (' . get_bloginfo('url') . ')'
-      );
+      $options = array('user-agent' => AIOFAVICON_USERAGENT);
 
       $response = wp_remote_request($url, $options);
 
