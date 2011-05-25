@@ -21,9 +21,11 @@
 define('AIOFAVICON_VERSION', '4.0');
 
 if (!defined('AIOFAVICON_PLUGIN_BASENAME')) {
+  //all-in-one-favicon/all-in-one-favicon.php
   define('AIOFAVICON_PLUGIN_BASENAME', plugin_basename(__FILE__));
 }
 if (!defined('AIOFAVICON_PLUGIN_NAME')) {
+  //all-in-one-favicon
   define('AIOFAVICON_PLUGIN_NAME', trim(dirname(AIOFAVICON_PLUGIN_BASENAME), '/'));
 }
 if (!defined('AIOFAVICON_NAME')) {
@@ -33,22 +35,18 @@ if (!defined('AIOFAVICON_TEXTDOMAIN')) {
   define('AIOFAVICON_TEXTDOMAIN', 'aio-favicon');
 }
 if (!defined('AIOFAVICON_PLUGIN_DIR')) {
+  // /path/to/wordpress/wp-content/plugins/all-in-one-favicon
   define('AIOFAVICON_PLUGIN_DIR', dirname(__FILE__));
 }
 if (!defined('AIOFAVICON_PLUGIN_URL')) {
+  // http://www.domain.com/wordpress/wp-content/plugins/all-in-one-favicon
   define('AIOFAVICON_PLUGIN_URL', WP_PLUGIN_URL . '/' . AIOFAVICON_PLUGIN_NAME);
-}
-if (!defined('AIOFAVICON_PLUGIN_LOCALIZATION_DIR')) {
-  define('AIOFAVICON_PLUGIN_LOCALIZATION_DIR', AIOFAVICON_PLUGIN_DIR . '/localization');
 }
 if (!defined('AIOFAVICON_SETTINGSNAME')) {
   define('AIOFAVICON_SETTINGSNAME', 'aio-favicon_settings');
 }
-if (!defined('AIOFAVICON_LATESTDONATEURL')) {
-  define('AIOFAVICON_LATESTDONATEURL', 'http://favicon.techotronic.de/latest-donations.php');
-}
-if (!defined('AIOFAVICON_TOPDONATEURL')) {
-  define('AIOFAVICON_TOPDONATEURL', 'http://favicon.techotronic.de/top-donations.php');
+if (!defined('AIOFAVICON_USERAGENT')) {
+  define('AIOFAVICON_USERAGENT', 'All-in-One Favicon V' . AIOFAVICON_VERSION . '; (' . get_bloginfo('url') . ')');
 }
 
 /**
