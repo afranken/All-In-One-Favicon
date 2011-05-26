@@ -1,8 +1,8 @@
 /**
  * @package Techotronic
- * @subpackage All in one Favicon
+ * @subpackage Donationloader
  *
- * @since 4.0
+ * @since 1.0
  * @author Arne Franken
  *
  * DonationLoader Javascript

@@ -13,10 +13,13 @@ if (!defined('DONATIONLOADER_XMLRPC_URL')) {
   define('DONATIONLOADER_XMLRPC_URL', 'http://www.wpthemetest.de/wordpress/xmlrpc.php');
 }
 if (!defined('DONATIONLOADER_CACHETIME')) {
-  define('DONATIONLOADER_CACHETIME', 300);
+  //cachetime in seconds
+  define('DONATIONLOADER_CACHETIME', 600);
 }
-class DonationLoader {
-  var $debugger;
+class AIOFaviconDonationLoader {
+  var $donationLoaderUserAgent = AIOFAVICON_USERAGENT;
+  var $donationLoaderPluginName = AIOFAVICON_PLUGIN_NAME;
+  var $donationLoaderPluginUrl = AIOFAVICON_PLUGIN_URL;
 
   /**
    * Constructor
@@ -28,7 +31,7 @@ class DonationLoader {
    *
    * @return void
    */
-  function DonationLoader() {
+  function AIOFaviconDonationLoader() {
     //not logged in users can trigger the action
     //add_action( 'wp_ajax_nopriv_action', 'methodName' );
     //only logged in users can trigger the action
@@ -112,7 +115,7 @@ class DonationLoader {
       // response not found in DB cache, generate response
       $xmlRpcRequest = xmlrpc_encode_request($remoteProcedureCall,$pluginName);
     
-      $response = $this->getRemoteXmlRpcContent(DONATIONLOADER_XMLRPC_URL,AIOFAVICON_USERAGENT,$xmlRpcRequest);
+      $response = $this->getRemoteXmlRpcContent(DONATIONLOADER_XMLRPC_URL,$this->donationLoaderUserAgent,$xmlRpcRequest);
 
       set_transient($key, serialize($response), DONATIONLOADER_CACHETIME);
     } else {
@@ -144,9 +147,9 @@ class DonationLoader {
   //public function registerDonationJavaScript() {
   function registerDonationJavaScript() {
     $javaScriptArray = array('ajaxurl' => admin_url( 'admin-ajax.php' ),
-    'pluginName' => AIOFAVICON_PLUGIN_NAME);
+    'pluginName' => $this->donationLoaderPluginName);
 
-    wp_register_script('donation', AIOFAVICON_PLUGIN_URL . '/js/donation-min.js', array('jquery'));
+    wp_register_script('donation', $this->donationLoaderPluginUrl . '/js/donation-min.js', array('jquery'));
     wp_enqueue_script('donation');
     wp_localize_script('donation', 'Donation', $javaScriptArray);
   }

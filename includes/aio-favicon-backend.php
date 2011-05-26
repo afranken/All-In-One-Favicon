@@ -38,10 +38,10 @@ class AioFaviconBackend {
     add_action('admin_post_aioFaviconUpdateSettings', array(& $this, 'aioFaviconUpdateSettings'));
 
     require_once 'donationloader.php';
-    $donationLoader = new Donationloader();
+    $donationLoader = new AIOFaviconDonationLoader();
 
     //only load JavaScript if we are on this plugin's settingspage
-    if (isset($_GET['page']) && $_GET['page'] == 'all-in-one-favicon/all-in-one-favicon.php') {
+    if (isset($_GET['page']) && $_GET['page'] == AIOFAVICON_PLUGIN_BASENAME) {
       add_action('admin_print_scripts', array(& $donationLoader, 'registerDonationJavaScript'));
       add_action('admin_print_scripts', array(& $this, 'registerAdminScripts'));
     }
