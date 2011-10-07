@@ -17,6 +17,11 @@
  * GNU General Public License for more details.
  */
 
+require_once (dirname (__FILE__) . '/includes/aio-favicon-frontend.php');
+require_once (dirname (__FILE__) . '/includes/aio-favicon-backend.php');
+require_once (dirname (__FILE__) . '/includes/donationloader.php');
+require_once (dirname (__FILE__) . '/includes/debugger.php');
+
 // define constants
 define('AIOFAVICON_VERSION', '4.0');
 
@@ -83,10 +88,9 @@ class AllInOneFavicon {
     $this->aioFaviconSettings = wp_parse_args($usersettings, $defaultArray);
 
     if (is_admin()) {
-      require_once 'includes/aio-favicon-backend.php';
-      new AioFaviconBackend($this->aioFaviconSettings, $this->aioFaviconDefaultSettings());
+      $donationLoader = new AIOFaviconDonationLoader();
+      new AioFaviconBackend($this->aioFaviconSettings, $this->aioFaviconDefaultSettings(),$donationLoader);
     } else if (!is_admin()) {
-      require_once 'includes/aio-favicon-frontend.php';
       new AioFaviconFrontend($this->aioFaviconSettings);
     }
 

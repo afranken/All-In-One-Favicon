@@ -24,10 +24,11 @@ class AioFaviconBackend {
    * @return void
    */
   //public static function AioFaviconBackend($aioFaviconSettings) {
-  function AioFaviconBackend($aioFaviconSettings, $aioFaviconDefaultSettings) {
+  function AioFaviconBackend($aioFaviconSettings, $aioFaviconDefaultSettings,$donationLoader) {
 
     $this->aioFaviconSettings = $aioFaviconSettings;
     $this->aioFaviconDefaultSettings = $aioFaviconDefaultSettings;
+    $this->donationLoader = $donationLoader;
 
     add_action('admin_head', array(& $this, 'aioFaviconRenderAdminHeader'));
 
@@ -36,9 +37,6 @@ class AioFaviconBackend {
 
     add_action('admin_post_aioFaviconDeleteSettings', array(& $this, 'aioFaviconDeleteSettings'));
     add_action('admin_post_aioFaviconUpdateSettings', array(& $this, 'aioFaviconUpdateSettings'));
-
-    require_once 'donationloader.php';
-    $donationLoader = new AIOFaviconDonationLoader();
 
     //only load JavaScript if we are on this plugin's settingspage
     if (isset($_GET['page']) && $_GET['page'] == AIOFAVICON_PLUGIN_BASENAME) {
@@ -247,6 +245,10 @@ class AioFaviconBackend {
     $usersettings = $_POST[AIOFAVICON_SETTINGSNAME];
     $defaultArray = $this->aioFaviconDefaultSettings;
     $this->aioFaviconSettings = wp_parse_args($usersettings, wp_parse_args((array)get_option(AIOFAVICON_SETTINGSNAME), $defaultArray));
+
+    if(!isset($usersettings['removeLinkFromMetaBox'])) {
+      $this->aioFaviconSettings['removeLinkFromMetaBox'] = false;
+    }
 
     // handle file upload
     $overrides = array('action' => 'aioFaviconUpdateSettings');

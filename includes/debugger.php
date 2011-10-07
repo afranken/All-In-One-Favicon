@@ -21,7 +21,7 @@
  * global $debugger;
  * $debugger->dieWithVariable($variable);
  */
-class Debugger {
+class AioFaviconDebugger {
 
   /**
    * Calls wp_die with the given variable.
