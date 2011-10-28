@@ -11,6 +11,6 @@
 ?>
 <div class="clear">
   <p>
-    <br/>&copy; Copyright 2010 - <?php echo date("Y"); ?> <a href="http://www.techotronic.de">Arne Franken</a>
+    <br/>&copy; Copyright 2010 - <?php echo date("Y"); ?> <a href="http://www.techotronic.de" target="_blank">Arne Franken</a>
   </p>
 </div>
