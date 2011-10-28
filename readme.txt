@@ -108,13 +108,12 @@ I'll include new FAQs in every new version. Promise.
 <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">Please visit my site for screenshots</a>.
 
 == Changelog ==
-= 4.0 (2011-05-30) =
+= 4.0 (2011-10-30) =
 * CHANGE: uploaded favicons can be deleted
 * CHANGE: new upload buttons, uploading of favicons is now much easier
 * CHANGE: uploaded favicons are now shown on settings page
 * CHANGE: fixed link to Apple Touch Icon howto
 * CHANGE: Major refactoring, hopefully speeds up frontend and backend rendering
-* CHANGE: Render Meta-Tag with plugin version into blog header instead of comments
 
 = 3.1 (2011-01-16) =
 * CHANGE: made plugin compatible to PHP4
