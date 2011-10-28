@@ -21,11 +21,14 @@ See <a href="http://www.techotronic.de/plugins/all-in-one-favicon/">plugin page<
 Localization
 
 * Bahasa Indonesia (id_ID) by <a href="http://movableid.com/">EKO</a>
+* Czech (cs_CZ) by <a href="http://www.neteyes.cz">Neteyes</a>
 * Danish (da_DK) by <a href="http://wordpress.blogos.dk/">GeorgWP</a>
 * English (en_EN) by <a href="http://www.techotronic.de/">Arne Franken</a>
+* French (fr_FR) by Christophe Guilloux
 * German (de_DE) by <a href="http://www.techotronic.de/">Arne Franken</a>
 * Italian (it_IT) by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
 * Polish (pl_PL) by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
+* Simplified Chinese (zh_CN) by <a href="http://sparanoid.com/">Tunghsiao Liu</a>
 * Spanish (es_ES) by <a href="mailto:jppm30@gmail.com">Juan Pablo Pérez Manes</a>
 * Swedish (sv_SE) by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
 
@@ -109,6 +112,9 @@ I'll include new FAQs in every new version. Promise.
 
 == Changelog ==
 = 4.0 (2011-10-30) =
+* NEW: Simplified Chinese translation by <a href="http://sparanoid.com/">Tunghsiao Liu</a>
+* NEW: Czech translation by <a href="http://www.neteyes.cz/">Neteyes</a>
+* NEW: French translation by Christophe Guilloux
 * CHANGE: uploaded favicons can be deleted
 * CHANGE: new upload buttons, uploading of favicons is now much easier
 * CHANGE: uploaded favicons are now shown on settings page
