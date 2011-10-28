@@ -34,7 +34,7 @@ if (!defined('AIOFAVICON_PLUGIN_NAME')) {
   define('AIOFAVICON_PLUGIN_NAME', trim(dirname(AIOFAVICON_PLUGIN_BASENAME), '/'));
 }
 if (!defined('AIOFAVICON_NAME')) {
-  define('AIOFAVICON_NAME', 'All in one Favicon');
+  define('AIOFAVICON_NAME', __('All in one Favicon'));
 }
 if (!defined('AIOFAVICON_TEXTDOMAIN')) {
   define('AIOFAVICON_TEXTDOMAIN', 'aio-favicon');
