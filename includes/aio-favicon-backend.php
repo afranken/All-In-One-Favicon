@@ -24,7 +24,7 @@ class AioFaviconBackend {
    * @return void
    */
   //public static function AioFaviconBackend($aioFaviconSettings) {
-  function AioFaviconBackend($aioFaviconSettings, $aioFaviconDefaultSettings,$donationLoader) {
+  function AioFaviconBackend($aioFaviconSettings, $aioFaviconDefaultSettings, $donationLoader) {
 
     $this->aioFaviconSettings = $aioFaviconSettings;
     $this->aioFaviconDefaultSettings = $aioFaviconDefaultSettings;
@@ -58,6 +58,7 @@ class AioFaviconBackend {
    *
    * @return void
    */
+  //public function registerAdminScripts() {
   function registerAdminScripts() {
     $backendJavaScriptArray = array();
     if (!empty($this->aioFaviconSettings)) {
@@ -133,25 +134,6 @@ class AioFaviconBackend {
   // renderSettingsPage()
 
   /**
-   * Register the settings page in WordPress
-   *
-   * @since 1.0
-   * @access private
-   * @author Arne Franken
-   *
-   * @return void
-   */
-  //private function registerSettingsPage() {
-  function registerSettingsPage() {
-    if (current_user_can('manage_options')) {
-      add_filter('plugin_action_links_' . AIOFAVICON_PLUGIN_BASENAME, array(& $this, 'addPluginActionLinks'));
-      add_options_page(AIOFAVICON_NAME, AIOFAVICON_NAME, 'manage_options', AIOFAVICON_PLUGIN_BASENAME, array(& $this, 'renderSettingsPage'));
-    }
-  }
-
-  // registerSettingsPage()
-
-  /**
    * Add settings link to plugin management page
    *
    * @since 1.0
@@ -202,27 +184,6 @@ class AioFaviconBackend {
   // registerAdminMenu()
 
   /**
-   * Registers Admin Notices
-   *
-   * @since 1.0
-   * @access private
-   * @author Arne Franken
-   *
-   * @param string $notice to register notice with.
-   *
-   * @return void
-   */
-  //private function registerAdminNotice($notice) {
-  function registerAdminNotice($notice) {
-    if ($notice != '') {
-      $message = '<div class="updated fade"><p>' . $notice . '</p></div>';
-      add_action('admin_notices', create_function('', "echo '$message';"));
-    }
-  }
-
-  // registerAdminNotice()
-
-  /**
    * Update plugin settings wrapper
    *
    * handles checks and redirect
@@ -246,7 +207,7 @@ class AioFaviconBackend {
     $defaultArray = $this->aioFaviconDefaultSettings;
     $this->aioFaviconSettings = wp_parse_args($usersettings, wp_parse_args((array)get_option(AIOFAVICON_SETTINGSNAME), $defaultArray));
 
-    if(!isset($usersettings['removeLinkFromMetaBox'])) {
+    if (!isset($usersettings['removeLinkFromMetaBox'])) {
       $this->aioFaviconSettings['removeLinkFromMetaBox'] = false;
     }
 
@@ -262,7 +223,7 @@ class AioFaviconBackend {
     // delete files if checkboxes are checked
     foreach ($_POST as $key => $value) {
       if (preg_match('/delete-(.*)/i', $key, $matches)) {
-        if(count($matches)>1){
+        if (count($matches) > 1) {
           $match = $matches[1];
           $this->deleteFile($match);
         }
@@ -279,6 +240,57 @@ class AioFaviconBackend {
   // aioFaviconUpdateSettings()
 
   /**
+   * Delete plugin settings wrapper
+   *
+   * handles checks and redirect
+   *
+   * @since 1.0
+   * @access public
+   * @author Arne Franken
+   *
+   * @return void
+   */
+  //public function aioFaviconDeleteSettings() {
+  function aioFaviconDeleteSettings() {
+
+    if (current_user_can('manage_options') && isset($_POST['delete_settings-true'])) {
+      //cross check the given referer for nonce set in delete settings form
+      check_admin_referer('aio-favicon-delete_settings-form');
+      $this->deleteSettingsFromDatabase();
+    } else {
+      wp_die(sprintf(__('Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox.', AIOFAVICON_TEXTDOMAIN), AIOFAVICON_NAME));
+    }
+    //clean up referrer
+    $referrer = str_replace(array('&aioFaviconUpdateSettings', '&aioFaviconDeleteSettings'), '', $_POST['_wp_http_referer']);
+    wp_redirect($referrer . '&aioFaviconDeleteSettings');
+  }
+
+  // aioFaviconDeleteSettings()
+
+  //===================================================================
+
+  /**
+   * Registers Admin Notices
+   *
+   * @since 1.0
+   * @access private
+   * @author Arne Franken
+   *
+   * @param string $notice to register notice with.
+   *
+   * @return void
+   */
+  //private function registerAdminNotice($notice) {
+  function registerAdminNotice($notice) {
+    if ($notice != '') {
+      $message = '<div class="updated fade"><p>' . $notice . '</p></div>';
+      add_action('admin_notices', create_function('', "echo '$message';"));
+    }
+  }
+
+  // registerAdminNotice()
+
+  /**
    * Delete favicon file
    *
    * @since 4.0
@@ -286,17 +298,18 @@ class AioFaviconBackend {
    * @author Arne Franken
    *
    * @param String $faviconName
-   * 
+   *
    * @return void
    */
+  //private function deleteFile($faviconName) {
   function deleteFile($faviconName) {
     $url = $this->aioFaviconSettings[$faviconName];
-    if($url !='') {
+    if ($url != '') {
       $uploads = wp_upload_dir();
-      $regex = '#'.$uploads['baseurl'].'/(.*)#i';
-      preg_match($regex,$url,$relativePath);
-      if(count($relativePath)>1){
-        $pathToFile = $uploads['basedir'] .'/' . $relativePath[1];
+      $regex = '#' . $uploads['baseurl'] . '/(.*)#i';
+      preg_match($regex, $url, $relativePath);
+      if (count($relativePath) > 1) {
+        $pathToFile = $uploads['basedir'] . '/' . $relativePath[1];
         @ unlink($pathToFile);
       }
     }
@@ -326,32 +339,23 @@ class AioFaviconBackend {
   //updateSettingsInDatabase()
 
   /**
-   * Delete plugin settings wrapper
-   *
-   * handles checks and redirect
+   * Register the settings page in WordPress
    *
    * @since 1.0
-   * @access public
+   * @access private
    * @author Arne Franken
    *
    * @return void
    */
-  //public function aioFaviconDeleteSettings() {
-  function aioFaviconDeleteSettings() {
-
-    if (current_user_can('manage_options') && isset($_POST['delete_settings-true'])) {
-      //cross check the given referer for nonce set in delete settings form
-      check_admin_referer('aio-favicon-delete_settings-form');
-      $this->deleteSettingsFromDatabase();
-    } else {
-      wp_die(sprintf(__('Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox.', AIOFAVICON_TEXTDOMAIN), AIOFAVICON_NAME));
+  //private function registerSettingsPage() {
+  function registerSettingsPage() {
+    if (current_user_can('manage_options')) {
+      add_filter('plugin_action_links_' . AIOFAVICON_PLUGIN_BASENAME, array(& $this, 'addPluginActionLinks'));
+      add_options_page(AIOFAVICON_NAME, AIOFAVICON_NAME, 'manage_options', AIOFAVICON_PLUGIN_BASENAME, array(& $this, 'renderSettingsPage'));
     }
-    //clean up referrer
-    $referrer = str_replace(array('&aioFaviconUpdateSettings', '&aioFaviconDeleteSettings'), '', $_POST['_wp_http_referer']);
-    wp_redirect($referrer . '&aioFaviconDeleteSettings');
   }
 
-  // aioFaviconDeleteSettings()
+  // registerSettingsPage()
 
   /**
    * Delete plugin settings
