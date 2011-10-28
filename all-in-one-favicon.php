@@ -99,6 +99,22 @@ class AllInOneFavicon {
   // AllInOneFavicon()
 
   /**
+   * executed during activation.
+   *
+   * @since 1.0
+   * @access public
+   * @author Arne Franken
+   */
+  //public function activateAioFavicon() {
+  function activateAioFavicon() {
+    //do nothing at the moment
+  }
+
+  // activateAioFavicon()
+
+  //==================================================================
+
+  /**
    * Default array of All In One Favicon settings
    *
    * @since 3.0
@@ -115,7 +131,7 @@ class AllInOneFavicon {
     return array(
       'aioFaviconVersion' => AIOFAVICON_VERSION,
       'debugMode' => false,
-      'removeLinkFromMetaBox' => false
+      'removeLinkFromMetaBox' => true
     );
   }
 
@@ -137,22 +153,8 @@ class AllInOneFavicon {
 
   // uninstallAioFavicon()
 
-  /**
-   * executed during activation.
-   *
-   * @since 1.0
-   * @access public
-   * @author Arne Franken
-   */
-  //public function activateAioFavicon() {
-  function activateAioFavicon() {
-    //do nothing at the moment
-  }
-
-  // activateAioFavicon()
-
 }
-
+//=================================================================================
 ?><?php
 /**
  * Workaround for PHP4
