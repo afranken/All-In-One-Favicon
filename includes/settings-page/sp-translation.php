@@ -14,7 +14,7 @@
     <h3 id="translation"><?php _e('Translation', AIOFAVICON_TEXTDOMAIN) ?></h3>
 
     <div class="inside">
-      <p><?php _e('The english translation was done by <a href="http://www.techotronic.de">Arne Franken</a>.', AIOFAVICON_TEXTDOMAIN); ?></p>
+      <p><?php _e('The english translation was done by <a href="http://www.techotronic.de"  target="_blank">Arne Franken</a>.', AIOFAVICON_TEXTDOMAIN); ?></p>
     </div>
   </div>
 </div>
