@@ -52,7 +52,7 @@
             <label for="faviconAppleHowto"><?php _e('Apple Touch Icon Howto', AIOFAVICON_TEXTDOMAIN); ?>:</label>
           </th>
           <td id="faviconAppleHowto">
-            <?php _e('<a href="http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon.', AIOFAVICON_TEXTDOMAIN) ?>
+            <?php _e('<a href="http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html" target="_blank">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon.', AIOFAVICON_TEXTDOMAIN) ?>
           </td>
         </tr>
       </table>
