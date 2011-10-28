@@ -27,9 +27,6 @@ class AioFaviconFrontend {
 
     add_action('wp_head', array(& $this, 'aioFaviconRenderBlogHeader'));
 
-    // Add meta tag with version number to the header
-    add_action('wp_head', array(& $this, 'renderMetaTag'));
-
     //only add link to meta box
     if (isset($this->aioFaviconSettings['removeLinkFromMetaBox']) && !$this->aioFaviconSettings['removeLinkFromMetaBox']) {
       add_action('wp_meta', array(& $this, 'renderMetaLink'));
@@ -94,23 +91,6 @@ class AioFaviconFrontend {
   }
 
   // renderMetaLink()
-
-  /**
-   * Renders plugin Meta tag
-   *
-   * @since 1.3
-   * @access public
-   * @author Arne Franken
-   */
-  //public function renderMetaTag() {
-  function renderMetaTag() {
-    ?>
-
-  <meta name="<?php echo AIOFAVICON_NAME ?>" content="<?php echo AIOFAVICON_VERSION ?>"/>
-  <?php
-  }
-
-  // renderMetaTag()
 }
 
 // AioFaviconFrontend()
