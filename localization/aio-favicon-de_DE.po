@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All In One Favicon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-04 00:16+0100\n"
-"PO-Revision-Date: 2011-05-04 00:16+0100\n"
+"POT-Creation-Date: 2011-10-28 22:21+0100\n"
+"PO-Revision-Date: 2011-10-28 22:26+0100\n"
 "Last-Translator: \n"
 "Language-Team: Techotronic <blog@techotronic.de>\n"
 "MIME-Version: 1.0\n"
@@ -16,32 +16,36 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/aio-favicon-backend.php:154
+#: all-in-one-favicon.php:37
+msgid "All in one Favicon"
+msgstr "All in one Favicon"
+
+#: includes/aio-favicon-backend.php:149
 #: includes/settings-page.php:15
 #: includes/settings-page/sp-plugin-settings.php:13
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: includes/aio-favicon-backend.php:177
+#: includes/aio-favicon-backend.php:174
 #, php-format
 msgid "Successfully updated %1$s settings."
 msgstr "&Auml;nderungen der %1$s Einstellungen wurden erfolgreich gespeichert."
 
-#: includes/aio-favicon-backend.php:179
+#: includes/aio-favicon-backend.php:176
 #, php-format
 msgid "%1$s settings were successfully deleted."
 msgstr "Die Einstellungen von %1$s wurden erfolgreich entfernt."
 
-#: includes/aio-favicon-backend.php:221
+#: includes/aio-favicon-backend.php:200
 msgid "Did not update settings, you do not have the necessary rights."
 msgstr "Einstellungen nicht aktualisiert, da Sie nicht die hierfür erforderlichen Rechte besitzen."
 
-#: includes/aio-favicon-backend.php:270
+#: includes/aio-favicon-backend.php:261
 #, php-format
 msgid "Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox."
 msgstr "Konnte die Einstellungen von %1$s nicht entfernen. Entweder besitzen Sie nicht die notwendigen Rechte, oder Sie haben vergessen, die Checkbox [x] zu aktivieren."
 
-#: includes/aio-favicon-frontend.php:85
+#: includes/aio-favicon-frontend.php:87
 msgid "Using"
 msgstr "Verwendet"
 
@@ -62,36 +66,36 @@ msgstr "Spenden"
 msgid "If you would like to make a small (or large) contribution towards future development please consider making a donation."
 msgstr "Wenn Du eine kleine (oder grosse) Spende f&uuml;r die Weiterentwicklung abgeben m&ouml;chtest, kannst Du das per PayPal tun."
 
-#: includes/settings-page/sp-donate-box.php:23
+#: includes/settings-page/sp-donate-box.php:24
 msgid "Techotronic Development Support"
 msgstr "Techotronic Entwicklung unterst&uuml;tzen"
 
-#: includes/settings-page/sp-donate-box.php:27
+#: includes/settings-page/sp-donate-box.php:28
 msgid "Please enter the URL you'd like me to link to in the donors lists"
 msgstr "Bitte die URL eingeben, die ich in den Spender-Listen verlinken soll"
 
-#: includes/settings-page/sp-donate-box.php:29
+#: includes/settings-page/sp-donate-box.php:30
 msgid "Return to Your Dashboard"
 msgstr "Zum Admin-Bereich zur&uuml;ckkehren"
 
-#: includes/settings-page/sp-donate-box.php:33
+#: includes/settings-page/sp-donate-box.php:34
 msgid "Select Preset Amount"
 msgstr "Vorgegebenen Betrag ausw&auml;hlen"
 
-#: includes/settings-page/sp-donate-box.php:41
-#: includes/settings-page/sp-donate-box.php:45
+#: includes/settings-page/sp-donate-box.php:42
+#: includes/settings-page/sp-donate-box.php:46
 msgid "USD"
 msgstr "Dollar"
 
-#: includes/settings-page/sp-donate-box.php:42
+#: includes/settings-page/sp-donate-box.php:43
 msgid "Or"
 msgstr "Oder"
 
-#: includes/settings-page/sp-donate-box.php:43
+#: includes/settings-page/sp-donate-box.php:44
 msgid "Enter Custom Amount"
 msgstr "Eigenen Betrag eingeben"
 
-#: includes/settings-page/sp-donate-box.php:47
+#: includes/settings-page/sp-donate-box.php:48
 msgid "Submit"
 msgstr "Absenden"
 
@@ -99,79 +103,73 @@ msgstr "Absenden"
 msgid "Top donations"
 msgstr "H&ouml;chste Spenden"
 
-#: includes/settings-page/sp-donations.php:23
+#: includes/settings-page/sp-donations.php:20
+#: includes/settings-page/sp-donations.php:33
+msgid "Thank you for your donation."
+msgstr "Danke f&uuml;r die Spende."
+
+#: includes/settings-page/sp-donations.php:27
 msgid "Latest donations"
 msgstr "Neueste Spenden"
 
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:63
+#: includes/settings-page/sp-plugin-settings.php:70
 #, php-format
 msgid "%1$s ICO"
 msgstr ""
 
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:32
-#: includes/settings-page/sp-plugin-settings.php:42
-#: includes/settings-page/sp-plugin-settings.php:52
+#: includes/settings-page/sp-plugin-settings.php:34
+#: includes/settings-page/sp-plugin-settings.php:46
+#: includes/settings-page/sp-plugin-settings.php:58
 msgid "Frontend"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:26
-#: includes/settings-page/sp-plugin-settings.php:36
-#: includes/settings-page/sp-plugin-settings.php:46
-#: includes/settings-page/sp-plugin-settings.php:56
-#: includes/settings-page/sp-plugin-settings.php:67
+#: includes/settings-page/sp-plugin-settings.php:29
+#: includes/settings-page/sp-plugin-settings.php:41
+#: includes/settings-page/sp-plugin-settings.php:53
+#: includes/settings-page/sp-plugin-settings.php:65
 #: includes/settings-page/sp-plugin-settings.php:77
-#: includes/settings-page/sp-plugin-settings.php:87
-#: includes/settings-page/sp-plugin-settings.php:97
-msgid "Upload Favicon"
-msgstr "Favicon hochladen"
+#: includes/settings-page/sp-plugin-settings.php:89
+#: includes/settings-page/sp-plugin-settings.php:101
+#: includes/settings-page/sp-plugin-settings.php:113
+msgid "Check box to delete favicon."
+msgstr "Box anklicken, um das Favicon zu l&ouml;schen."
 
-#: includes/settings-page/sp-plugin-settings.php:27
-#: includes/settings-page/sp-plugin-settings.php:37
-#: includes/settings-page/sp-plugin-settings.php:47
-#: includes/settings-page/sp-plugin-settings.php:57
-#: includes/settings-page/sp-plugin-settings.php:68
-#: includes/settings-page/sp-plugin-settings.php:78
-#: includes/settings-page/sp-plugin-settings.php:88
-#: includes/settings-page/sp-plugin-settings.php:98
-msgid "Enter a URL or upload a Favicon."
-msgstr "GIb die URL zu einem vorhandenen Favicon ein oder lade ein neues hoch."
-
-#: includes/settings-page/sp-plugin-settings.php:32
-#: includes/settings-page/sp-plugin-settings.php:73
+#: includes/settings-page/sp-plugin-settings.php:34
+#: includes/settings-page/sp-plugin-settings.php:82
 #, php-format
 msgid "%1$s PNG"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:42
-#: includes/settings-page/sp-plugin-settings.php:83
+#: includes/settings-page/sp-plugin-settings.php:46
+#: includes/settings-page/sp-plugin-settings.php:94
 #, php-format
 msgid "%1$s GIF"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:52
-#: includes/settings-page/sp-plugin-settings.php:93
+#: includes/settings-page/sp-plugin-settings.php:58
+#: includes/settings-page/sp-plugin-settings.php:106
 #, php-format
-msgid "%1$s Apple touch icon"
+msgid "%1$s Apple Touch Icon"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:63
-#: includes/settings-page/sp-plugin-settings.php:73
-#: includes/settings-page/sp-plugin-settings.php:83
-#: includes/settings-page/sp-plugin-settings.php:93
+#: includes/settings-page/sp-plugin-settings.php:70
+#: includes/settings-page/sp-plugin-settings.php:82
+#: includes/settings-page/sp-plugin-settings.php:94
+#: includes/settings-page/sp-plugin-settings.php:106
 msgid "Backend"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:103
+#: includes/settings-page/sp-plugin-settings.php:118
 msgid "Remove link from Meta-box"
 msgstr "Link aus der Meta-box entfernen"
 
-#: includes/settings-page/sp-plugin-settings.php:107
+#: includes/settings-page/sp-plugin-settings.php:124
 msgid "Remove the link to the developers site from the WordPress meta-box."
 msgstr "Entfernt den Link zur Seite des Entwicklers aus der Meta-box des Blogs."
 
-#: includes/settings-page/sp-plugin-settings.php:113
+#: includes/settings-page/sp-plugin-settings.php:130
 msgid "Save Changes"
 msgstr "&Auml;nderungen speichern"
 
@@ -184,39 +182,49 @@ msgid "Favicon wikipedia entry"
 msgstr "Wikipedia Eintrag"
 
 #: includes/settings-page/sp-tipps-box.php:23
-msgid "<a href=\"http://en.wikipedia.org/wiki/Favicon\">Wikipedia</a> offers much information about favicon types and sizes."
-msgstr "<a href=\"http://de.wikipedia.org/wiki/Favicon\">Wikipedia</a> bietet viele Informationen &uuml;ber Favicons."
+msgid "<a href=\"http://en.wikipedia.org/wiki/Favicon\" target=\"_blank\">Wikipedia</a> offers much information about favicon types and sizes."
+msgstr "<a href=\"http://de.wikipedia.org/wiki/Favicon\" target=\"_blank\">Wikipedia</a> bietet viele Informationen &uuml;ber Favicons."
 
 #: includes/settings-page/sp-tipps-box.php:28
 msgid "Favicon generator"
 msgstr "Favicon Generator"
 
 #: includes/settings-page/sp-tipps-box.php:31
-msgid "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> provides a favicon generator that is very easy to use."
-msgstr "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> hat einen einfachen Favicon Generator."
+msgid "<a href=\"http://www.html-kit.com/favicon/\" target=\"_blank\">HTML Kit</a> provides a favicon generator that is very easy to use."
+msgstr "<a href=\"http://www.html-kit.com/favicon/\" target=\"_blank\">HTML Kit</a> hat einen einfachen Favicon Generator."
 
 #: includes/settings-page/sp-tipps-box.php:36
+msgid "Favicon CC editor"
+msgstr "Favicon CC editor"
+
+#: includes/settings-page/sp-tipps-box.php:39
+msgid "<a href=\"http://www.favicon.cc/\" target=\"_blank\">Favicon CC</a> provides a favicon editor that is very easy to use."
+msgstr "<a href=\"http://www.favicon.cc/\" target=\"_blank\">Favicon CC</a> hat einen einfachen Favicon Generator."
+
+#: includes/settings-page/sp-tipps-box.php:44
 msgid "Favicon validator"
 msgstr "Favicon Validator"
 
-#: includes/settings-page/sp-tipps-box.php:39
-msgid "<a href=\"http://www.html-kit.com/favicon/validator\">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers."
-msgstr "<a href=\"http://www.html-kit.com/favicon/validator\">HTML Kit</a> hat einen online Favicon Validator der Dir sagt, ob Dein Favicon richtig konfiguriert ist und ob es kompatibel zu allen Browsern ist."
+#: includes/settings-page/sp-tipps-box.php:47
+msgid "<a href=\"http://www.html-kit.com/favicon/validator\" target=\"_blank\">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers."
+msgstr "<a href=\"http://www.html-kit.com/favicon/validator\" target=\"_blank\">HTML Kit</a> hat einen online Favicon Validator der Dir sagt, ob Dein Favicon richtig konfiguriert ist und ob es kompatibel zu allen Browsern ist."
 
-#: includes/settings-page/sp-tipps-box.php:44
+#: includes/settings-page/sp-tipps-box.php:52
 msgid "Apple Touch Icon Howto"
 msgstr "Apple Touch Icon Howto"
 
-#: includes/settings-page/sp-tipps-box.php:47
-#, fuzzy
-msgid "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html\">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon."
-msgstr "<a href=\"http://developer.apple.com/safari/library/documentation/internetweb/conceptual/iPhoneWebAppHIG/MetricsLayout/MetricsLayout.html\">Apple</a> hat ein Howto wie man ein PNG als Apple Touch Icon verwenden kann."
+#: includes/settings-page/sp-tipps-box.php:55
+msgid "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html\" target=\"_blank\">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon."
+msgstr "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html\" target=\"_blank\">Apple</a> hat ein Howto wie man ein PNG als Apple Touch Icon verwenden kann."
 
 #: includes/settings-page/sp-translation.php:14
 msgid "Translation"
 msgstr "&Uuml;bersetzung"
 
 #: includes/settings-page/sp-translation.php:17
-msgid "The english translation was done by <a href=\"http://www.techotronic.de\">Arne Franken</a>."
-msgstr "Die &Uuml;bersetzung ins Deutsche wurde von <a href=\"http://www.techotronic.de\">Arne Franken</a> durchgef&uuml;hrt."
+msgid "The english translation was done by <a href=\"http://www.techotronic.de\"  target=\"_blank\">Arne Franken</a>."
+msgstr "Die &Uuml;bersetzung ins Deutsche wurde von <a href=\"http://www.techotronic.de\" target=\"_blank\">Arne Franken</a> durchgef&uuml;hrt."
 
+#~ msgid "Enter a URL or upload a Favicon."
+#~ msgstr ""
+#~ "GIb die URL zu einem vorhandenen Favicon ein oder lade ein neues hoch."
