@@ -120,6 +120,7 @@ I'll include new FAQs in every new version. Promise.
 * NEW: Simplified Chinese translation by <a href="http://sparanoid.com/">Tunghsiao Liu</a>
 * NEW: Czech translation by <a href="http://www.neteyes.cz/">Neteyes</a>
 * NEW: French translation by Christophe Guilloux
+* NEW: Option to not add reflective shine to Apple Touch Icons
 * CHANGE: uploaded favicons can be deleted
 * CHANGE: new upload buttons, uploading of favicons is now much easier
 * CHANGE: uploaded favicons are now shown on settings page
