@@ -3,7 +3,7 @@ Contributors: techotronic
 Donate link: http://www.techotronic.de/donate/
 Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, iphone, multisite
 Requires at least: 2.8
-Tested up to: 3.2
+Tested up to: 3.3
 Stable tag: 3.1
 
 Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).
@@ -30,6 +30,7 @@ Localization
 * Polish (pl_PL) by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
 * Simplified Chinese (zh_CN) by <a href="http://sparanoid.com/">Tunghsiao Liu</a>
 * Spanish (es_ES) by <a href="mailto:jppm30@gmail.com">Juan Pablo Pérez Manes</a>
+* Slovak (sk_SK) by <a href="http://www.brozman.sk/blog">Viliam Brozman</a>
 * Swedish (sv_SE) by <a href="http://www.theindiaexperience.se/">Christian Nilsson</a>
 
 Is your native language missing? Translating the plugin is easy if you understand english and are fluent in another language. Just send me an email.
@@ -120,6 +121,7 @@ I'll include new FAQs in every new version. Promise.
 * NEW: Simplified Chinese translation by <a href="http://sparanoid.com/">Tunghsiao Liu</a>
 * NEW: Czech translation by <a href="http://www.neteyes.cz/">Neteyes</a>
 * NEW: French translation by Christophe Guilloux
+* NEW: Slovak translation by <a href="http://www.brozman.sk/blog">Viliam Brozman</a>
 * NEW: Option to not add reflective shine to Apple Touch Icons
 * CHANGE: uploaded favicons can be deleted
 * CHANGE: new upload buttons, uploading of favicons is now much easier
