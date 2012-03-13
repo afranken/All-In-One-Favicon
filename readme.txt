@@ -28,6 +28,7 @@ Localization
 * German (de_DE) by <a href="http://www.techotronic.de/">Arne Franken</a>
 * Italian (it_IT) by <a href="http://www.valeriovendrame.it/">Valerio Vendrame</a>
 * Polish (pl_PL) by <a href="http://www.facebook.com/piniu69/">Piotr Czarnecki</a>
+* Serbian (sr_RS) by <a href="http://dralvaro.com/">Balkanboy Media team</a>
 * Simplified Chinese (zh_CN) by <a href="http://sparanoid.com/">Tunghsiao Liu</a>
 * Spanish (es_ES) by <a href="mailto:jppm30@gmail.com">Juan Pablo Pérez Manes</a>
 * Slovak (sk_SK) by <a href="http://www.brozman.sk/blog">Viliam Brozman</a>
@@ -122,6 +123,7 @@ I'll include new FAQs in every new version. Promise.
 * NEW: Czech translation by <a href="http://www.neteyes.cz/">Neteyes</a>
 * NEW: French translation by Christophe Guilloux
 * NEW: Slovak translation by <a href="http://www.brozman.sk/blog">Viliam Brozman</a>
+* NEW: Serbian translation by <a href="http://dralvaro.com/">Balkanboy Media team</a>
 * NEW: Option to not add reflective shine to Apple Touch Icons
 * CHANGE: uploaded favicons can be deleted
 * CHANGE: new upload buttons, uploading of favicons is now much easier
