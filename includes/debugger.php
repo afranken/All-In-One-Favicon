@@ -15,7 +15,7 @@
  * In constructor:
  * global $debugger;
  * require_once('debugger.php');
- * $debugger = new Debugger();
+ * $debugger = new AioFaviconDebugger();
  *
  * In method:
  * global $debugger;
@@ -55,6 +55,8 @@ class AioFaviconDebugger {
   }
 
   // dieWithVariable()
+
+  //=====================================================================================================
 
   /**
    * Dumps the given variable into an HTML container
