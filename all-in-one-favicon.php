@@ -131,6 +131,7 @@ class AllInOneFavicon {
     return array(
       'aioFaviconVersion' => AIOFAVICON_VERSION,
       'debugMode' => false,
+      'removeReflectiveShine' => false,
       'removeLinkFromMetaBox' => true
     );
   }
