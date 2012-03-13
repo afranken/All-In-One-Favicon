@@ -56,6 +56,11 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 
 You are probably using a WordPress Multisite installation? Then you'll need to add "ico" to the allowed file types property on the "Super Admin -> Options" page.
 
+* Why does my favicon show up in all browsers but the Internet Explorer?
+
+Internet Explorer behaves weird, not only when favicons are concerned. You may take a look at this
+<a href="http://jeffcode.blogspot.com/2007/12/why-doesnt-favicon-for-my-site-appear.html">FAQ</a>.
+
 * Why is All In One Favicon not available in my language?
 
 I speak German and English fluently, but unfortunately no other language well enough to do a translation.
