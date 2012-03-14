@@ -145,7 +145,7 @@
           <td>
             <input type="checkbox" name="<?php echo AIOFAVICON_SETTINGSNAME ?>[removeReflectiveShine]" id="<?php echo AIOFAVICON_SETTINGSNAME ?>-removeReflectiveShine" value="true" <?php echo ($this->aioFaviconSettings['removeReflectiveShine'])
                     ? 'checked="checked"' : '';?>/>
-            <br/><?php _e('Don\'t add reflective shine from Apple Touch Icon', AIOFAVICON_TEXTDOMAIN); ?>
+            <br/><?php _e('Don\'t add reflective shine to Apple Touch Icon', AIOFAVICON_TEXTDOMAIN); ?>
           </td>
         </tr>
         <tr>
