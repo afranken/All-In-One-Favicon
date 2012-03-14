@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All in one Favicon v3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-12 21:45+0100\n"
-"PO-Revision-Date: 2012-03-12 21:45+0100\n"
+"POT-Creation-Date: 2012-03-15 00:37+0100\n"
+"PO-Revision-Date: 2012-03-15 00:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,9 +20,8 @@ msgstr ""
 
 # @ aio-favicon
 #: all-in-one-favicon.php:37
-#, fuzzy
 msgid "All in one Favicon"
-msgstr "Nahrať ikonku"
+msgstr ""
 
 # @ aio-favicon
 #: includes/aio-favicon-backend.php:158
@@ -138,79 +137,79 @@ msgstr "Posledné príspevky"
 
 # @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:70
+#: includes/settings-page/sp-plugin-settings.php:82
 #, php-format
 msgid "%1$s ICO"
 msgstr "%1$s ICO"
 
 # @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:34
-#: includes/settings-page/sp-plugin-settings.php:46
-#: includes/settings-page/sp-plugin-settings.php:58
+#: includes/settings-page/sp-plugin-settings.php:37
+#: includes/settings-page/sp-plugin-settings.php:52
+#: includes/settings-page/sp-plugin-settings.php:67
 msgid "Frontend"
 msgstr "Vstup"
 
-#: includes/settings-page/sp-plugin-settings.php:29
-#: includes/settings-page/sp-plugin-settings.php:41
-#: includes/settings-page/sp-plugin-settings.php:53
-#: includes/settings-page/sp-plugin-settings.php:65
+#: includes/settings-page/sp-plugin-settings.php:32
+#: includes/settings-page/sp-plugin-settings.php:47
+#: includes/settings-page/sp-plugin-settings.php:62
 #: includes/settings-page/sp-plugin-settings.php:77
-#: includes/settings-page/sp-plugin-settings.php:89
-#: includes/settings-page/sp-plugin-settings.php:101
-#: includes/settings-page/sp-plugin-settings.php:113
+#: includes/settings-page/sp-plugin-settings.php:92
+#: includes/settings-page/sp-plugin-settings.php:107
+#: includes/settings-page/sp-plugin-settings.php:122
+#: includes/settings-page/sp-plugin-settings.php:137
 msgid "Check box to delete favicon."
 msgstr ""
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:34
-#: includes/settings-page/sp-plugin-settings.php:82
+#: includes/settings-page/sp-plugin-settings.php:37
+#: includes/settings-page/sp-plugin-settings.php:97
 #, php-format
 msgid "%1$s PNG"
 msgstr "%1$s PNG"
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:46
-#: includes/settings-page/sp-plugin-settings.php:94
+#: includes/settings-page/sp-plugin-settings.php:52
+#: includes/settings-page/sp-plugin-settings.php:112
 #, php-format
 msgid "%1$s GIF"
 msgstr "%1$s GIF"
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:58
-#: includes/settings-page/sp-plugin-settings.php:106
+#: includes/settings-page/sp-plugin-settings.php:67
+#: includes/settings-page/sp-plugin-settings.php:127
 #, fuzzy, php-format
 msgid "%1$s Apple Touch Icon"
 msgstr "%1$s Apple touch ikonka"
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:70
 #: includes/settings-page/sp-plugin-settings.php:82
-#: includes/settings-page/sp-plugin-settings.php:94
-#: includes/settings-page/sp-plugin-settings.php:106
+#: includes/settings-page/sp-plugin-settings.php:97
+#: includes/settings-page/sp-plugin-settings.php:112
+#: includes/settings-page/sp-plugin-settings.php:127
 msgid "Backend"
 msgstr "Výstup"
 
-#: includes/settings-page/sp-plugin-settings.php:118
+#: includes/settings-page/sp-plugin-settings.php:142
 msgid "Don't add reflective shine"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:124
-msgid "Don't add reflective shine from Apple Touch Icon"
+#: includes/settings-page/sp-plugin-settings.php:148
+msgid "Don't add reflective shine to Apple Touch Icon"
 msgstr ""
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:129
+#: includes/settings-page/sp-plugin-settings.php:153
 msgid "Remove link from Meta-box"
 msgstr "Odstrániť odkaz z Meta boxu"
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:135
+#: includes/settings-page/sp-plugin-settings.php:159
 msgid "Remove the link to the developers site from the WordPress meta-box."
 msgstr "Odstrániť odkaz na vývojársku stránku z WordPress meta boxu."
 
 # @ default
-#: includes/settings-page/sp-plugin-settings.php:141
+#: includes/settings-page/sp-plugin-settings.php:165
 msgid "Save Changes"
 msgstr "Uložiť zmeny"
 
@@ -226,9 +225,8 @@ msgstr "Faficon na wikipedii"
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:23
-#, fuzzy
 msgid "<a href=\"http://en.wikipedia.org/wiki/Favicon\" target=\"_blank\">Wikipedia</a> offers much information about favicon types and sizes."
-msgstr "<a href=\"http://en.wikipedia.org/wiki/Favicon\">Wikipedia</a> ponúka kopec informácií o ikonkách a ich veľkostiach."
+msgstr "<a href=\"http://en.wikipedia.org/wiki/Favicon\" target=\"_blank\">Wikipedia</a> ponúka kopec informácií o ikonkách a ich veľkostiach."
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:28
@@ -237,9 +235,8 @@ msgstr "Favicon generátor"
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:31
-#, fuzzy
 msgid "<a href=\"http://www.html-kit.com/favicon/\" target=\"_blank\">HTML Kit</a> provides a favicon generator that is very easy to use."
-msgstr "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> poskytuje generátor ikoniek a je ľahký na použitie."
+msgstr "<a href=\"http://www.html-kit.com/favicon/\" target=\"_blank\">HTML Kit</a> poskytuje generátor ikoniek a je ľahký na použitie."
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:36
@@ -249,9 +246,8 @@ msgstr "Favicon generátor"
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:39
-#, fuzzy
 msgid "<a href=\"http://www.favicon.cc/\" target=\"_blank\">Favicon CC</a> provides a favicon editor that is very easy to use."
-msgstr "<a href=\"http://www.html-kit.com/favicon/\">HTML Kit</a> poskytuje generátor ikoniek a je ľahký na použitie."
+msgstr "<a href=\"http://www.favicon.cc/\" target=\"_blank\">Favicon CC</a> poskytuje generátor ikoniek a je ľahký na použitie."
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:44
@@ -260,9 +256,8 @@ msgstr "Favicon validátor"
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:47
-#, fuzzy
 msgid "<a href=\"http://www.html-kit.com/favicon/validator\" target=\"_blank\">HTML Kit</a> provides a favicon validator that tells you whether your favicon is working and if it is compatible to all browsers."
-msgstr "<a href=\"http://www.html-kit.com/favicon/validator\">HTML Kit</a> poskytuje validátor, ktorý vám povie či je ikonka funkčná a kompatibilná so všetkými prehliadačmi."
+msgstr "<a href=\"http://www.html-kit.com/favicon/validator\" target=\"_blank\">HTML Kit</a> poskytuje validátor, ktorý vám povie či je ikonka funkčná a kompatibilná so všetkými prehliadačmi."
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:52
@@ -271,9 +266,8 @@ msgstr "Ako na Apple touch ikonku"
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:55
-#, fuzzy
 msgid "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html\" target=\"_blank\">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon."
-msgstr "<a href=\"http://developer.apple.com/safari/library/documentation/internetweb/conceptual/iPhoneWebAppHIG/MetricsLayout/MetricsLayout.html\">Apple</a> poskytuje návod, ako vytvoriť PNG ikonku pre Apple Touch."
+msgstr "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html\" target=\"_blank\">Apple</a> poskytuje návod, ako vytvoriť PNG ikonku pre Apple Touch."
 
 # @ aio-favicon
 #: includes/settings-page/sp-translation.php:14
@@ -282,7 +276,6 @@ msgstr "Preklady"
 
 # @ aio-favicon
 #: includes/settings-page/sp-translation.php:17
-#, fuzzy
 msgid "The english translation was done by <a href=\"http://www.techotronic.de\"  target=\"_blank\">Arne Franken</a>."
-msgstr "Anglický preklad vyhotovil <a href=\"http://www.techotronic.de\">Arne Franken</a>."
+msgstr "Anglický preklad vyhotovil <a href=\"http://www.techotronic.de\"  target=\"_blank\">Arne Franken</a>."
 

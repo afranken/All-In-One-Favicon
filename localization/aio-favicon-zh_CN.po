@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All in one Favicon v3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-28 22:31+0100\n"
-"PO-Revision-Date: 2011-10-28 22:32+0100\n"
+"POT-Creation-Date: 2012-03-15 00:40+0100\n"
+"PO-Revision-Date: 2012-03-15 00:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -24,37 +24,37 @@ msgid "All in one Favicon"
 msgstr ""
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:149
+#: includes/aio-favicon-backend.php:158
 #: includes/settings-page.php:15
 #: includes/settings-page/sp-plugin-settings.php:13
 msgid "Settings"
 msgstr "设置"
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:174
+#: includes/aio-favicon-backend.php:183
 #, php-format
 msgid "Successfully updated %1$s settings."
 msgstr "成功更新 %1$s 设置。"
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:176
+#: includes/aio-favicon-backend.php:185
 #, php-format
 msgid "%1$s settings were successfully deleted."
 msgstr "%1$s 设置已成功删除"
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:200
+#: includes/aio-favicon-backend.php:209
 msgid "Did not update settings, you do not have the necessary rights."
 msgstr "设置未更新，您没有足够的权限。"
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:261
+#: includes/aio-favicon-backend.php:270
 #, php-format
 msgid "Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox."
 msgstr "未删除 %1$s 设置，您没有勾选相应图标，或没有足够的权限。"
 
 # @ aio-favicon
-#: includes/aio-favicon-frontend.php:87
+#: includes/aio-favicon-frontend.php:96
 msgid "Using"
 msgstr "正在使用"
 
@@ -137,71 +137,79 @@ msgstr "最新捐赠"
 
 # @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:70
+#: includes/settings-page/sp-plugin-settings.php:82
 #, php-format
 msgid "%1$s ICO"
 msgstr "%1$s ICO"
 
 # @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:34
-#: includes/settings-page/sp-plugin-settings.php:46
-#: includes/settings-page/sp-plugin-settings.php:58
+#: includes/settings-page/sp-plugin-settings.php:37
+#: includes/settings-page/sp-plugin-settings.php:52
+#: includes/settings-page/sp-plugin-settings.php:67
 msgid "Frontend"
 msgstr "前台"
 
-#: includes/settings-page/sp-plugin-settings.php:29
-#: includes/settings-page/sp-plugin-settings.php:41
-#: includes/settings-page/sp-plugin-settings.php:53
-#: includes/settings-page/sp-plugin-settings.php:65
+#: includes/settings-page/sp-plugin-settings.php:32
+#: includes/settings-page/sp-plugin-settings.php:47
+#: includes/settings-page/sp-plugin-settings.php:62
 #: includes/settings-page/sp-plugin-settings.php:77
-#: includes/settings-page/sp-plugin-settings.php:89
-#: includes/settings-page/sp-plugin-settings.php:101
-#: includes/settings-page/sp-plugin-settings.php:113
+#: includes/settings-page/sp-plugin-settings.php:92
+#: includes/settings-page/sp-plugin-settings.php:107
+#: includes/settings-page/sp-plugin-settings.php:122
+#: includes/settings-page/sp-plugin-settings.php:137
 msgid "Check box to delete favicon."
 msgstr ""
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:34
-#: includes/settings-page/sp-plugin-settings.php:82
+#: includes/settings-page/sp-plugin-settings.php:37
+#: includes/settings-page/sp-plugin-settings.php:97
 #, php-format
 msgid "%1$s PNG"
 msgstr "%1$s PNG"
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:46
-#: includes/settings-page/sp-plugin-settings.php:94
+#: includes/settings-page/sp-plugin-settings.php:52
+#: includes/settings-page/sp-plugin-settings.php:112
 #, php-format
 msgid "%1$s GIF"
 msgstr "%1$s GIF"
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:58
-#: includes/settings-page/sp-plugin-settings.php:106
+#: includes/settings-page/sp-plugin-settings.php:67
+#: includes/settings-page/sp-plugin-settings.php:127
 #, php-format
 msgid "%1$s Apple Touch Icon"
 msgstr ""
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:70
 #: includes/settings-page/sp-plugin-settings.php:82
-#: includes/settings-page/sp-plugin-settings.php:94
-#: includes/settings-page/sp-plugin-settings.php:106
+#: includes/settings-page/sp-plugin-settings.php:97
+#: includes/settings-page/sp-plugin-settings.php:112
+#: includes/settings-page/sp-plugin-settings.php:127
 msgid "Backend"
 msgstr "后台"
 
+#: includes/settings-page/sp-plugin-settings.php:142
+msgid "Don't add reflective shine"
+msgstr ""
+
+#: includes/settings-page/sp-plugin-settings.php:148
+msgid "Don't add reflective shine to Apple Touch Icon"
+msgstr ""
+
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:118
+#: includes/settings-page/sp-plugin-settings.php:153
 msgid "Remove link from Meta-box"
 msgstr "删除侧栏中的推广链接"
 
 # @ aio-favicon
-#: includes/settings-page/sp-plugin-settings.php:124
+#: includes/settings-page/sp-plugin-settings.php:159
 msgid "Remove the link to the developers site from the WordPress meta-box."
 msgstr "从 WordPress 的「功能」侧边栏中去除推广链接"
 
 # @ default
-#: includes/settings-page/sp-plugin-settings.php:130
+#: includes/settings-page/sp-plugin-settings.php:165
 msgid "Save Changes"
 msgstr "保存更改"
 
@@ -259,7 +267,7 @@ msgstr "如何制作 Apple Touch Icon"
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:55
 msgid "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html\" target=\"_blank\">Apple</a> provides a howto on how to create a PNG to use as an Apple Touch Icon."
-msgstr "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/configuringwebapplications/configuringwebapplications.html\" target=\"_blank\">Apple</a> 提供了如何把 PNG 图片作为 Apple Touch Icon 的方法。"
+msgstr "<a href=\"http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/ConfiguringWebApplications/ConfiguringWebApplications.html\" target=\"_blank\">Apple</a> 提供了如何把 PNG 图片作为 Apple Touch Icon 的方法。"
 
 # @ aio-favicon
 #: includes/settings-page/sp-translation.php:14
