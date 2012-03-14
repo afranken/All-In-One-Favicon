@@ -23,6 +23,7 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 * Bahasa Indonesia (`id_ID`) by [EKO](http://movableid.com/)
 * Czech (`cs_CZ`) by [Neteyes](http://www.neteyes.cz)
 * Danish (`da_DK`) by [GeorgWP](http://wordpress.blogos.dk/)
+* Dutch (`nl_NL`) by Pieter Carette
 * English (`en_EN`) by [Arne Franken](http://www.techotronic.de/)
 * French (`fr_FR`) by Christophe Guilloux
 * German (`de_DE`) by [Arne Franken](http://www.techotronic.de/)
@@ -97,6 +98,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 * NEW: French translation by Christophe Guilloux
 * NEW: Slovak translation by Viliam Brozman
 * NEW: Serbian translation by Balkanboy Media team
+* NEW: Dutch translation by Pieter Carette
 * NEW: Option to not add reflective shine to Apple Touch Icons
 * CHANGE: uploaded favicons can be deleted
 * CHANGE: new upload buttons, uploading of favicons is now much easier
