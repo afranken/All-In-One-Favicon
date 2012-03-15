@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All In One Favicon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-28 22:27+0100\n"
-"PO-Revision-Date: 2011-10-28 22:27+0100\n"
+"POT-Creation-Date: 2012-03-15 00:36+0100\n"
+"PO-Revision-Date: 2012-03-15 00:36+0100\n"
 "Last-Translator: \n"
 "Language-Team: Techotronic <blog@techotronic.de>\n"
 "MIME-Version: 1.0\n"
@@ -20,32 +20,32 @@ msgstr ""
 msgid "All in one Favicon"
 msgstr ""
 
-#: includes/aio-favicon-backend.php:149
+#: includes/aio-favicon-backend.php:158
 #: includes/settings-page.php:15
 #: includes/settings-page/sp-plugin-settings.php:13
 msgid "Settings"
 msgstr "Setelan"
 
-#: includes/aio-favicon-backend.php:174
+#: includes/aio-favicon-backend.php:183
 #, php-format
 msgid "Successfully updated %1$s settings."
 msgstr "Berhasil memutakhirkan setelan %1$s."
 
-#: includes/aio-favicon-backend.php:176
+#: includes/aio-favicon-backend.php:185
 #, php-format
 msgid "%1$s settings were successfully deleted."
 msgstr "Setelan %1$s berhasil dihapus."
 
-#: includes/aio-favicon-backend.php:200
+#: includes/aio-favicon-backend.php:209
 msgid "Did not update settings, you do not have the necessary rights."
 msgstr "Tidak bisa memutakhirkan setelan, kamu tidak mempunyai hak akses yang dibutuhkan."
 
-#: includes/aio-favicon-backend.php:261
+#: includes/aio-favicon-backend.php:270
 #, php-format
 msgid "Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox."
 msgstr "Tidak bisa menghapus setelan %1$s. Bisa jadi karena kamu tidak mempunyai hak akses yang dibutuhkan atau tidak memberi tanda centang di kotak centang."
 
-#: includes/aio-favicon-frontend.php:87
+#: includes/aio-favicon-frontend.php:96
 msgid "Using"
 msgstr "Menggunakan"
 
@@ -113,63 +113,71 @@ msgid "Latest donations"
 msgstr ""
 
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:70
+#: includes/settings-page/sp-plugin-settings.php:82
 #, php-format
 msgid "%1$s ICO"
 msgstr "ICO %1$s"
 
 #: includes/settings-page/sp-plugin-settings.php:22
-#: includes/settings-page/sp-plugin-settings.php:34
-#: includes/settings-page/sp-plugin-settings.php:46
-#: includes/settings-page/sp-plugin-settings.php:58
+#: includes/settings-page/sp-plugin-settings.php:37
+#: includes/settings-page/sp-plugin-settings.php:52
+#: includes/settings-page/sp-plugin-settings.php:67
 msgid "Frontend"
 msgstr "Frontend"
 
-#: includes/settings-page/sp-plugin-settings.php:29
-#: includes/settings-page/sp-plugin-settings.php:41
-#: includes/settings-page/sp-plugin-settings.php:53
-#: includes/settings-page/sp-plugin-settings.php:65
+#: includes/settings-page/sp-plugin-settings.php:32
+#: includes/settings-page/sp-plugin-settings.php:47
+#: includes/settings-page/sp-plugin-settings.php:62
 #: includes/settings-page/sp-plugin-settings.php:77
-#: includes/settings-page/sp-plugin-settings.php:89
-#: includes/settings-page/sp-plugin-settings.php:101
-#: includes/settings-page/sp-plugin-settings.php:113
+#: includes/settings-page/sp-plugin-settings.php:92
+#: includes/settings-page/sp-plugin-settings.php:107
+#: includes/settings-page/sp-plugin-settings.php:122
+#: includes/settings-page/sp-plugin-settings.php:137
 msgid "Check box to delete favicon."
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:34
-#: includes/settings-page/sp-plugin-settings.php:82
+#: includes/settings-page/sp-plugin-settings.php:37
+#: includes/settings-page/sp-plugin-settings.php:97
 #, php-format
 msgid "%1$s PNG"
 msgstr "PNG %1$s"
 
-#: includes/settings-page/sp-plugin-settings.php:46
-#: includes/settings-page/sp-plugin-settings.php:94
+#: includes/settings-page/sp-plugin-settings.php:52
+#: includes/settings-page/sp-plugin-settings.php:112
 #, php-format
 msgid "%1$s GIF"
 msgstr "GIF %1$s"
 
-#: includes/settings-page/sp-plugin-settings.php:58
-#: includes/settings-page/sp-plugin-settings.php:106
+#: includes/settings-page/sp-plugin-settings.php:67
+#: includes/settings-page/sp-plugin-settings.php:127
 #, php-format
 msgid "%1$s Apple Touch Icon"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:70
 #: includes/settings-page/sp-plugin-settings.php:82
-#: includes/settings-page/sp-plugin-settings.php:94
-#: includes/settings-page/sp-plugin-settings.php:106
+#: includes/settings-page/sp-plugin-settings.php:97
+#: includes/settings-page/sp-plugin-settings.php:112
+#: includes/settings-page/sp-plugin-settings.php:127
 msgid "Backend"
 msgstr "Backend"
 
-#: includes/settings-page/sp-plugin-settings.php:118
+#: includes/settings-page/sp-plugin-settings.php:142
+msgid "Don't add reflective shine"
+msgstr ""
+
+#: includes/settings-page/sp-plugin-settings.php:148
+msgid "Don't add reflective shine to Apple Touch Icon"
+msgstr ""
+
+#: includes/settings-page/sp-plugin-settings.php:153
 msgid "Remove link from Meta-box"
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:124
+#: includes/settings-page/sp-plugin-settings.php:159
 msgid "Remove the link to the developers site from the WordPress meta-box."
 msgstr ""
 
-#: includes/settings-page/sp-plugin-settings.php:130
+#: includes/settings-page/sp-plugin-settings.php:165
 msgid "Save Changes"
 msgstr "Simpan Perubahan"
 
