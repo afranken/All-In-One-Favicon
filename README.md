@@ -35,7 +35,9 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 * Slovak (`sk_SK`) by [Viliam Brozman](http://www.brozman.sk/blog)
 * Swedish (`sv_SE`) by [Christian Nilsson](http://www.theindiaexperience.se/)
 
-Is your native language missing? Translating the plugin is easy if you understand english and are fluent in another language. Just send me an email.
+Is your native language missing?  
+Translating the plugin is easy if you understand english and are fluent in another language.  
+I described in the [FAQ](http://wordpress.org/extend/plugins/all-in-one-favicon/faq/) how the translation works.
 
 == Installation ==
 
