@@ -27,6 +27,7 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 * English (`en_EN`) by [Arne Franken](http://www.techotronic.de/)
 * French (`fr_FR`) by Christophe Guilloux
 * German (`de_DE`) by [Arne Franken](http://www.techotronic.de/)
+* Hebrew (`he_IL`) by [Ahrale](http://www.atar4u.com)
 * Italian (`it_IT`) by [Valerio Vendrame](http://www.valeriovendrame.it/)
 * Polish (`pl_PL`) by [Piotr Czarnecki](http://www.facebook.com/piniu69/)
 * Serbian (`sr_RS`) by [Balkanboy Media team](http://dralvaro.com/)
@@ -95,6 +96,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 
 == Changelog ==
 = 4.1 (2012-04-30) =
+* NEW: Hebrew translation by Ahrale
 * CHANGE: use `plugins_url` to make links HTTPS aware
 
 = 4.0 (2012-03-14) =
