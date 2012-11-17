@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: All in one Favicon v3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-15 00:37+0100\n"
-"PO-Revision-Date: 2012-03-15 00:38+0100\n"
+"POT-Creation-Date: 2012-04-15 21:51+0100\n"
+"PO-Revision-Date: 2012-04-15 21:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Poedit-Language: Slovak\n"
 "X-Poedit-Country: SLOVAKIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -21,34 +21,34 @@ msgstr ""
 # @ aio-favicon
 #: all-in-one-favicon.php:37
 msgid "All in one Favicon"
-msgstr ""
+msgstr "All in one Favicon"
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:158
+#: includes/aio-favicon-backend.php:159
 #: includes/settings-page.php:15
 #: includes/settings-page/sp-plugin-settings.php:13
 msgid "Settings"
 msgstr "Nastavenia"
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:183
+#: includes/aio-favicon-backend.php:184
 #, php-format
 msgid "Successfully updated %1$s settings."
 msgstr "Úspešne aktualizovaných %1$s nastavení."
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:185
+#: includes/aio-favicon-backend.php:186
 #, php-format
 msgid "%1$s settings were successfully deleted."
 msgstr "%1$s nastavení úspešene vymazaných."
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:209
+#: includes/aio-favicon-backend.php:210
 msgid "Did not update settings, you do not have the necessary rights."
 msgstr "Nastavenia neboli zmenené, nemáte potrebné práva."
 
 # @ aio-favicon
-#: includes/aio-favicon-backend.php:270
+#: includes/aio-favicon-backend.php:271
 #, php-format
 msgid "Did not delete %1$s settings. Either you dont have the nececssary rights or you didnt check the checkbox."
 msgstr "%1$s Nastavení sa nevymazalo. Buď nemáte potrebné práva, alebo ste nezaškrtli políčko."
@@ -125,10 +125,11 @@ msgstr "Odoslať"
 msgid "Top donations"
 msgstr "Najväčšie príspevky"
 
+# @ aio-favicon
 #: includes/settings-page/sp-donations.php:20
 #: includes/settings-page/sp-donations.php:33
 msgid "Thank you for your donation."
-msgstr ""
+msgstr "Ďakujeme Vám za finančný príspevok."
 
 # @ aio-favicon
 #: includes/settings-page/sp-donations.php:27
@@ -148,8 +149,9 @@ msgstr "%1$s ICO"
 #: includes/settings-page/sp-plugin-settings.php:52
 #: includes/settings-page/sp-plugin-settings.php:67
 msgid "Frontend"
-msgstr "Vstup"
+msgstr "Frontend"
 
+# @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:32
 #: includes/settings-page/sp-plugin-settings.php:47
 #: includes/settings-page/sp-plugin-settings.php:62
@@ -159,7 +161,7 @@ msgstr "Vstup"
 #: includes/settings-page/sp-plugin-settings.php:122
 #: includes/settings-page/sp-plugin-settings.php:137
 msgid "Check box to delete favicon."
-msgstr ""
+msgstr "Zaškrtnite pre zmazanie favicon."
 
 # @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:37
@@ -188,15 +190,17 @@ msgstr "%1$s Apple touch ikonka"
 #: includes/settings-page/sp-plugin-settings.php:112
 #: includes/settings-page/sp-plugin-settings.php:127
 msgid "Backend"
-msgstr "Výstup"
+msgstr "Backend"
 
+# @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:142
 msgid "Don't add reflective shine"
-msgstr ""
+msgstr "Nepridávať reflexný odraz"
 
+# @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:148
 msgid "Don't add reflective shine to Apple Touch Icon"
-msgstr ""
+msgstr "Nepridávať reflexný odraz pre Apple Touch ikonku"
 
 # @ aio-favicon
 #: includes/settings-page/sp-plugin-settings.php:153
@@ -221,7 +225,7 @@ msgstr "Tipy"
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:20
 msgid "Favicon wikipedia entry"
-msgstr "Faficon na wikipedii"
+msgstr "Favicon na wikipedii"
 
 # @ aio-favicon
 #: includes/settings-page/sp-tipps-box.php:23
