@@ -41,7 +41,7 @@ I described in the [FAQ](http://wordpress.org/extend/plugins/all-in-one-favicon/
 
 == Installation ==
 
-###Updgrading From A Previous Version###
+###Upgrading From A Previous Version###
 
 To upgrade from a previous version of this plugin, use the built in update feature of WordPress or copy the files on top of the current installation.
 
@@ -70,7 +70,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
   Would you like to help? Translating the plugin is easy if you understand English and are fluent in another language.
 
 * How do I translate All In One Favicon?  
-  Take a look at the WordPress site and identify [your langyage code](http://codex.wordpress.org/WordPress_in_Your_Language):  
+  Take a look at the WordPress site and identify [your language code](http://codex.wordpress.org/WordPress_in_Your_Language):  
   e.g. the language code for German is `de_DE`.
 
   1. download [POEdit](http://www.poedit.net/)
