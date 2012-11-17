@@ -95,11 +95,12 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 [Please visit my site for screenshots](http://www.techotronic.de/plugins/all-in-one-favicon/).
 
 == Changelog ==
-= 4.1 (2012-04-30) =
+= 4.1 (2012-07-20) =
 * NEW: Hebrew translation by Ahrale
 * CHANGE: use `plugins_url` to make links HTTPS aware
 * CHANGE: Viliam Brozman updated the Slovak translation
 * CHANGE: Tunghsiao Liu updated the Simplified Chinese translation
+* BUGFIX: switch declaration of 'NAME' and 'TEXTDOMAIN'
 
 = 4.0 (2012-03-14) =
 * NEW: Simplified Chinese translation by Tunghsiao Liu

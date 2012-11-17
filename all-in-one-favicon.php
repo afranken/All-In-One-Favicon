@@ -33,11 +33,11 @@ if (!defined('AIOFAVICON_PLUGIN_NAME')) {
   //all-in-one-favicon
   define('AIOFAVICON_PLUGIN_NAME', trim(dirname(AIOFAVICON_PLUGIN_BASENAME), '/'));
 }
-if (!defined('AIOFAVICON_NAME')) {
-  define('AIOFAVICON_NAME', __('All in one Favicon',AIOFAVICON_TEXTDOMAIN));
-}
 if (!defined('AIOFAVICON_TEXTDOMAIN')) {
   define('AIOFAVICON_TEXTDOMAIN', 'aio-favicon');
+}
+if (!defined('AIOFAVICON_NAME')) {
+  define('AIOFAVICON_NAME', __('All in one Favicon',AIOFAVICON_TEXTDOMAIN));
 }
 if (!defined('AIOFAVICON_PLUGIN_DIR')) {
   // /path/to/wordpress/wp-content/plugins/all-in-one-favicon
