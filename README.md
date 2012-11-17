@@ -4,21 +4,21 @@ Donate link: http://www.techotronic.de/donate/
 Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, iphone, multisite  
 Requires at least: 2.8  
 Tested up to: 3.3  
-Stable tag: 4.0
+Stable tag: 4.0  
 
-Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).
+Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).  
 
 ## Description ##
 
 All In One Favicon adds favicons to your site and your admin pages.  
-You can either use favicons you already uploaded or use the builtin upload mechanism to upload a favicon to your WordPress installation.
+You can either use favicons you already uploaded or use the builtin upload mechanism to upload a favicon to your WordPress installation.  
 
 All three favicon types are supported - .ico, .png and .gif (may be animated)  
-Also, Apple Touch Icons are supported.
+Also, Apple Touch Icons are supported.  
 
-See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for more information, a "first steps" guide and screenshots.
+See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for more information, a "first steps" guide and screenshots.  
 
-**Localization**
+**Localization**  
 
 * Bahasa Indonesia (`id_ID`) by [EKO](http://movableid.com/)
 * Czech (`cs_CZ`) by [Neteyes](http://www.neteyes.cz)
@@ -37,18 +37,18 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 
 Is your native language missing?  
 Translating the plugin is easy if you understand english and are fluent in another language.  
-I described in the [FAQ](http://wordpress.org/extend/plugins/all-in-one-favicon/faq/) how the translation works.
+I described in the [FAQ](http://wordpress.org/extend/plugins/all-in-one-favicon/faq/) how the translation works.  
 
 ## Installation ##
 
 ###Upgrading From A Previous Version###
 
-To upgrade from a previous version of this plugin, use the built in update feature of WordPress or copy the files on top of the current installation.
+To upgrade from a previous version of this plugin, use the built in update feature of WordPress or copy the files on top of the current installation.  
 
 ###Installing The Plugin###
 
 Either use the built in plugin installation feature of WordPress, or extract all files from the ZIP file, making sure to keep the file structure intact, and then upload it to `/wp-content/plugins/`.  
-Then just visit your admin area and activate the plugin. That's it!
+Then just visit your admin area and activate the plugin. That's it!  
 
 ###Configuring The Plugin###
 
@@ -94,8 +94,10 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 [Please visit my site for screenshots](http://www.techotronic.de/plugins/all-in-one-favicon/).
 
 ## Changelog ##
-### 4.1 (2012-07-20) ###
+### 4.1 (2012-11-17) ###
 * NEW: Hebrew translation by Ahrale
+* CHANGE: favicon URLs can be copy'n'pasted again
+* CHANGE: upload form only accepts files of type "image" now.
 * CHANGE: use `plugins_url` to make links HTTPS aware
 * CHANGE: Viliam Brozman updated the Slovak translation
 * CHANGE: Tunghsiao Liu updated the Simplified Chinese translation

@@ -13,6 +13,8 @@
  */
 jQuery(document).ready(function() {
     faviconLoader();
+    bindFileSelectionDialogTriggers();
+    bindTextBoxUpdaters();
 });
 
 /**
@@ -31,3 +33,40 @@ jQuery(document).ready(function() {
 })(jQuery);
 
 // faviconLoader()
+
+/**
+ * faviconLoader
+ *
+ * load all uploaded favicons
+ */
+(function(jQuery) {
+    bindFileSelectionDialogTriggers = function() {
+
+        var buttons = jQuery("form#aio-favicon-settings-update")
+            .find('input[type="button"]');
+
+        buttons.click(function () {
+            jQuery(this).siblings('input[type="file"]').trigger('click');
+        });
+    }
+})(jQuery);
+
+// faviconLoader()
+
+
+/**
+ * faviconLoader
+ *
+ * load all uploaded favicons
+ */
+(function(jQuery) {
+    bindTextBoxUpdaters = function() {
+        var containers = jQuery("form#aio-favicon-settings-update");
+        containers.find('input[type="file"]').change(function () {
+          jQuery(this).siblings('input[type="text"]').val(jQuery(this).val());
+        });
+    }
+})(jQuery);
+
+// faviconLoader()
+

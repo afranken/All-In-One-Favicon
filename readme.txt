@@ -97,6 +97,8 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 == Changelog ==
 = 4.1 (2012-07-20) =
 * NEW: Hebrew translation by Ahrale
+* CHANGE: favicon URLs can be copy'n'pasted again
+* CHANGE: upload form only accepts files of type "image" now.
 * CHANGE: use `plugins_url` to make links HTTPS aware
 * CHANGE: Viliam Brozman updated the Slovak translation
 * CHANGE: Tunghsiao Liu updated the Simplified Chinese translation
