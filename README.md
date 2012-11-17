@@ -1,4 +1,4 @@
-=== All In One Favicon ===
+# All In One Favicon #
 Contributors: techotronic  
 Donate link: http://www.techotronic.de/donate/  
 Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, iphone, multisite  
@@ -8,7 +8,7 @@ Stable tag: 4.0
 
 Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).
 
-== Description ==
+## Description ##
 
 All In One Favicon adds favicons to your site and your admin pages.  
 You can either use favicons you already uploaded or use the builtin upload mechanism to upload a favicon to your WordPress installation.
@@ -39,7 +39,7 @@ Is your native language missing?
 Translating the plugin is easy if you understand english and are fluent in another language.  
 I described in the [FAQ](http://wordpress.org/extend/plugins/all-in-one-favicon/faq/) how the translation works.
 
-== Installation ==
+## Installation ##
 
 ###Updgrading From A Previous Version###
 
@@ -56,7 +56,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 
 **See Also:** ["Installing Plugins" article on the WP Codex](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins)
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
 * When I try to upload a favicon, I get the error: "File type does not meet security guidelines. Try another.”  
   You are probably using a WordPress Multisite installation? Then you'll need to add "ico" to the allowed file types property on the "Super Admin -> Options" page.
@@ -89,12 +89,12 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
   Feel free to open a thread at [the All In One Favicon WordPress.org forum](http://wordpress.org/tags/all-in-one-favicon?forum_id=10#postform).  
   I'll include new FAQs in every new version.
 
-== Screenshots ==
+## Screenshots ##
 
 [Please visit my site for screenshots](http://www.techotronic.de/plugins/all-in-one-favicon/).
 
-== Changelog ==
-= 4.0 (2012-03-14) =
+## Changelog ##
+### 4.0 (2012-03-14) ###
 * NEW: Simplified Chinese translation by Tunghsiao Liu
 * NEW: Czech translation by Neteyes
 * NEW: French translation by Christophe Guilloux
@@ -109,10 +109,10 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 * CHANGE: fixed link to Apple Touch Icon howto
 * CHANGE: Major refactoring, hopefully speeds up frontend and backend rendering
 
-= 3.1 (2011-01-16) =
+### 3.1 (2011-01-16) ###
 * CHANGE: made plugin compatible to PHP4
 
-= 3.0 (2011-01-15) =
+### 3.0 (2011-01-15) ###
 * NEW: Added option to remove link from meta box.
 * BUGFIX: Fixed a bug where the plugin would break WordPress 3.0 with Multisite enabled.
 * NEW: Added latest donations and top donations to settings page
@@ -123,12 +123,12 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 * NEW: Italian translation by Valerio Vendrame
 * NEW: Spanish translation by Juan Pablo Pérez Manes
 
-= 2.1 (2010-06-06) =
+### 2.1 (2010-06-06) ###
 * BUGFIX: Fixing bug where favicons would not be displayed in certain cases.
 
-= 2.0 (2010-06-03) =
+### 2.0 (2010-06-03) ###
 * NEW: now supports Apple Touch Icons for backend and frontend
 * NEW: more links to websites containing information.
 
-= 1.0 (2010-05-06) =
+### 1.0 (2010-05-06) ###
 * NEW: Initial release.
