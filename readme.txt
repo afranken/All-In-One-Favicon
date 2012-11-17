@@ -99,6 +99,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 * NEW: Hebrew translation by Ahrale
 * CHANGE: use `plugins_url` to make links HTTPS aware
 * CHANGE: Viliam Brozman updated the Slovak translation
+* CHANGE: Tunghsiao Liu updated the Simplified Chinese translation
 
 = 4.0 (2012-03-14) =
 * NEW: Simplified Chinese translation by Tunghsiao Liu
