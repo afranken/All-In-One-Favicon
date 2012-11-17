@@ -53,6 +53,12 @@ if (!defined('AIOFAVICON_SETTINGSNAME')) {
 if (!defined('AIOFAVICON_USERAGENT')) {
   define('AIOFAVICON_USERAGENT', 'All-in-One Favicon V' . AIOFAVICON_VERSION . '; (' . get_bloginfo('url') . ')');
 }
+if (!defined('AIOFAVICON_FRONTEND')) {
+  define('AIOFAVICON_FRONTEND', 'frontend');
+}
+if (!defined('AIOFAVICON_BACKEND')) {
+  define('AIOFAVICON_BACKEND', 'backend');
+}
 
 /**
  * Main plugin class
@@ -63,13 +69,15 @@ if (!defined('AIOFAVICON_USERAGENT')) {
 class AllInOneFavicon {
 
   /**
+   * Constructor
    * Plugin initialization
    *
    * @since 1.0
    * @access public
+   * @access static
    * @author Arne Franken
    */
-  //public function AllInOneFavicon(){
+  //public static function AllInOneFavicon() {
   function AllInOneFavicon() {
     if (!function_exists('plugins_url')) {
       return;
@@ -90,7 +98,8 @@ class AllInOneFavicon {
     if (is_admin()) {
       $donationLoader = new AIOFaviconDonationLoader();
       new AioFaviconBackend($this->aioFaviconSettings, $this->aioFaviconDefaultSettings(),$donationLoader);
-    } else if (!is_admin()) {
+    }
+    else {
       new AioFaviconFrontend($this->aioFaviconSettings);
     }
 
