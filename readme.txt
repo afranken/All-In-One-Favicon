@@ -94,6 +94,9 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 [Please visit my site for screenshots](http://www.techotronic.de/plugins/all-in-one-favicon/).
 
 == Changelog ==
+= 4.1 (2012-04-30) =
+* CHANGE: use `plugins_url` to make links HTTPS aware
+
 = 4.0 (2012-03-14) =
 * NEW: Simplified Chinese translation by Tunghsiao Liu
 * NEW: Czech translation by Neteyes
