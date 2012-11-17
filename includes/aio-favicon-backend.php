@@ -41,8 +41,8 @@ class AioFaviconBackend {
 
     //only load JavaScript if we are on this plugin's settingspage
     if (isset($_GET['page']) && $_GET['page'] == AIOFAVICON_PLUGIN_BASENAME) {
-      add_action('admin_print_scripts', array(& $donationLoader, 'registerDonationJavaScript'));
-      add_action('admin_print_scripts', array(& $this, 'registerAdminScripts'));
+      add_action('admin_enqueue_scripts', array(& $donationLoader, 'registerDonationJavaScript'));
+      add_action('admin_enqueue_scripts', array(& $this, 'registerAdminScripts'));
     }
   }
 
