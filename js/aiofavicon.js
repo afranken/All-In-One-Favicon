@@ -12,18 +12,19 @@
  * call favicon loader on page load.
  */
 jQuery(document).ready(function() {
-    faviconLoader();
-    bindFileSelectionDialogTriggers();
-    bindTextBoxUpdaters();
+    loadFavicons();
+    bindEventTriggers();
+    bindChangeHandlers();
 });
 
 /**
- * faviconLoader
- * 
  * load all uploaded favicons
+ *
+ * @since 3.2
+ * @author Arne Franken
  */
 (function(jQuery) {
-    faviconLoader = function() {
+    loadFavicons = function() {
         jQuery.each(Aiofavicon, function(key, value) {
             var $imgTag = "<img src=\"" + value  + "\" />";
             var selector = "#"+key+"-favicon";
@@ -32,41 +33,57 @@ jQuery(document).ready(function() {
     }
 })(jQuery);
 
-// faviconLoader()
+// loadFavicons()
 
 /**
- * faviconLoader
+ * Find all buttons, attach a click event.
+ * Event triggers a click event on the hidden "file" input field
+ * which displays the file selector dialog.
  *
- * load all uploaded favicons
+ * @since 4.1
+ * @author Arne Franken
  */
 (function(jQuery) {
-    bindFileSelectionDialogTriggers = function() {
+    bindEventTriggers = function() {
 
-        var buttons = jQuery("form#aio-favicon-settings-update")
-            .find('input[type="button"]');
+      var form = jQuery("form#aio-favicon-settings-update");
 
-        buttons.click(function () {
-            jQuery(this).siblings('input[type="file"]').trigger('click');
+      var buttonInputs = form.find('input[type="button"]');
+
+      buttonInputs.click(function () {
+          jQuery(this)
+              .siblings('input[type="file"]')
+              .trigger('click');
+      });
+
+    }
+})(jQuery);
+
+// bindEventTriggers()
+
+
+/**
+ * Attach change event handler to all hidden "file" inputs.
+ * Value will be copied to "text" input when user selects a file.
+ * Only the filename will be displayed.
+ *
+ * @since 4.1
+ * @author Arne Franken
+ */
+(function(jQuery) {
+    bindChangeHandlers = function() {
+
+        var form = jQuery("form#aio-favicon-settings-update");
+
+        var fileInputs = form.find('input[type="file"]');
+
+        fileInputs.change(function () {
+            jQuery(this)
+                .siblings('input[type="text"]')
+                .val(jQuery(this)
+                .val());
         });
     }
 })(jQuery);
 
-// faviconLoader()
-
-
-/**
- * faviconLoader
- *
- * load all uploaded favicons
- */
-(function(jQuery) {
-    bindTextBoxUpdaters = function() {
-        var containers = jQuery("form#aio-favicon-settings-update");
-        containers.find('input[type="file"]').change(function () {
-          jQuery(this).siblings('input[type="text"]').val(jQuery(this).val());
-        });
-    }
-})(jQuery);
-
-// faviconLoader()
-
+// bindChangeHandlers()
