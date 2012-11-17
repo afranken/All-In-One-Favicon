@@ -20,6 +20,7 @@ class AioFaviconBackend {
    *
    * @param array $aioFaviconSettings user settings
    * @param array $aioFaviconDefaultSettings default plugin settings
+   * @param AIOFaviconDonationLoader $donationLoader the donationloader
    *
    * @return void
    */
@@ -393,7 +394,7 @@ class AioFaviconBackend {
    *
    * @param string $url
    *
-   * @return the response
+   * @return string the response
    */
   //private function getRemoteContent($url) {
   function getRemoteContent($url) {
