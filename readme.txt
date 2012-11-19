@@ -32,7 +32,7 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 * Polish (`pl_PL`) by [Piotr Czarnecki](http://www.facebook.com/piniu69/)
 * Serbian (`sr_RS`) by [Balkanboy Media team](http://dralvaro.com/)
 * Simplified Chinese (`zh_CN`) by [Tunghsiao Liu](http://sparanoid.com/)
-* Spanish (`es_ES`) by [Juan Pablo Pérez Manes](mailto:jppm30@gmail.com)
+* Spanish (`es_ES`) by Eddy Ernesto Ríos
 * Slovak (`sk_SK`) by [Viliam Brozman](http://www.brozman.sk/blog)
 * Swedish (`sv_SE`) by [Christian Nilsson](http://www.theindiaexperience.se/)
 
@@ -58,9 +58,6 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 **See Also:** ["Installing Plugins" article on the WP Codex](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins)
 
 == Frequently Asked Questions ==
-
-* When I try to upload a favicon, I get the error: "File type does not meet security guidelines. Try another.”  
-  You are probably using a WordPress Multisite installation? Then you'll need to add "ico" to the allowed file types property on the "Super Admin -> Options" page.
 
 * Internet Explorer: Why does my favicon show up in the backend but not in the frontend or not at all?  
   Internet Explorer behaves weird, not only when favicons are concerned. You may take a look at this  
@@ -95,6 +92,10 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 [Please visit my site for screenshots](http://www.techotronic.de/plugins/all-in-one-favicon/).
 
 == Changelog ==
+= 4.2 (2012-02-01) =
+* CHANGE: Eddy Ernesto Ríos updated the Spanish translation
+
+
 = 4.1 (2012-11-17) =
 * NEW: Hebrew translation by Ahrale
 * CHANGE: favicon URLs can be copy'n'pasted again
