@@ -96,11 +96,33 @@ class AllInOneFavicon {
     $this->aioFaviconSettings = wp_parse_args($usersettings, $defaultArray);
 
     if (is_admin()) {
+      //mapping of favicon types to translatable Strings
+      $this->aioFaviconFrontendMap = array(
+        'frontendICO' => 'ICO',
+        'frontendGIF' => 'GIF',
+        'frontendPNG' => 'PNG',
+        'frontendApple' => 'Apple Touch Icon'
+      );
+
+      //mapping of favicon types to translatable Strings
+      $this->aioFaviconBackendMap = array(
+        'backendICO' => 'ICO',
+        'backendGIF' => 'GIF',
+        'backendPNG' => 'PNG',
+        'backendApple' => 'Apple Touch Icon'
+      );
+
       $donationLoader = new AIOFaviconDonationLoader();
-      new AioFaviconBackend($this->aioFaviconSettings, $this->aioFaviconDefaultSettings(),$donationLoader);
+      $backend = new AioFaviconBackend($this->aioFaviconSettings,
+        $this->aioFaviconDefaultSettings(),
+        $donationLoader,
+        $this->aioFaviconFrontendMap,
+        $this->aioFaviconBackendMap);
+      $backend->init();
     }
     else {
-      new AioFaviconFrontend($this->aioFaviconSettings);
+      $frontend = new AioFaviconFrontend($this->aioFaviconSettings);
+      $frontend->init();
     }
 
   }
