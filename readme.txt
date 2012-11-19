@@ -35,6 +35,7 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 * Spanish (`es_ES`) by Eddy Ernesto Ríos
 * Slovak (`sk_SK`) by [Viliam Brozman](http://www.brozman.sk/blog)
 * Swedish (`sv_SE`) by [Christian Nilsson](http://www.theindiaexperience.se/)
+* Turkish (`tr_TR`) by Selçuk Yahşi
 
 Is your native language missing?  
 Translating the plugin is easy if you understand english and are fluent in another language.  
@@ -93,7 +94,9 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 
 == Changelog ==
 = 4.2 (2012-02-01) =
+* NEW: Turkish translation by Selçuk Yahşi
 * CHANGE: Eddy Ernesto Ríos updated the Spanish translation
+
 
 
 = 4.1 (2012-11-17) =
