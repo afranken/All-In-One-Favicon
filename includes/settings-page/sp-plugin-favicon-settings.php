@@ -9,24 +9,17 @@
  * Frontend Favicon Settings
  */
 ?>
-<div id="aio-favicon-frontend-settings" class="postbox">
-    <h3 id="frontend-settings"><?php _e('Frontend', AIOFAVICON_TEXTDOMAIN); echo " "; _e('Settings', AIOFAVICON_TEXTDOMAIN); ?></h3>
+<div id="aio-favicon-<?php echo $this->identifier ?>-settings" class="postbox">
+    <h3 id="<?php echo $this->identifier ?>-settings"><?php echo $this->translatedIdentifier; echo " "; _e('Settings', AIOFAVICON_TEXTDOMAIN); ?></h3>
 
     <div class="inside">
         <table class="form-table">
 <?php
-          // The icons that we can set.
-          $faviconMap = array(
-            'frontendICO' => 'ICO',
-            'frontendPNG' => 'PNG',
-            'frontendGIF' => 'GIF',
-            'frontendApple' => 'Apple Touch Icon');
-
           // Loop over this list of icons.
-          foreach ($faviconMap as $iconName => $iconType) { ?>
+          foreach ($this->faviconMap as $iconName => $iconType) { ?>
             <tr>
                 <th scope="row">
-                    <label for="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>"><?php printf(__('%1$s '.$iconType, AIOFAVICON_TEXTDOMAIN), __('Frontend', AIOFAVICON_TEXTDOMAIN)); ?>:</label>
+                    <label for="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>"><?php printf(__('%1$s '.$iconType, AIOFAVICON_TEXTDOMAIN), $this->translatedIdentifier); ?>:</label>
                 </th>
                 <td width="32">
                     <div id="<?php echo $iconName ?>-favicon"></div>
@@ -36,7 +29,10 @@
                     <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>-text" type="text" name="<?php echo $iconName ?>-text" size="60" maxlength="100000" value="<?php echo $this->aioFaviconSettings[$iconName] ?>"/>
                     <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>-button" type="button" name="<?php echo $iconName ?>-button" class="button-secondary" value="<?php _e('Upload') ?>" />
                     <br />
+                    <?php //only display
+                    if(!empty($this->aioFaviconSettings[$iconName])) { ?>
                     <input type="checkbox" name="delete-<?php echo $iconName ?>"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
+                    <?php } ?>
                 </td>
             </tr>
           <?php } ?>

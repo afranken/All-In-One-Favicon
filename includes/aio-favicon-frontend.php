@@ -27,18 +27,31 @@ class AioFaviconFrontend {
   function AioFaviconFrontend($aioFaviconSettings) {
 
     $this->aioFaviconSettings = $aioFaviconSettings;
-
     $this->faviconRenderHelper = new FaviconRenderHelper($this->aioFaviconSettings,AIOFAVICON_FRONTEND);
+  }
+
+  // AioFaviconFrontend()
+
+  /**
+   * Initialize
+   *
+   * @since 4.0
+   * @access public
+   * @author Arne Franken
+   *
+   * @return void
+   */
+  //public function init() {
+  function init() {
     add_action('wp_head', array(& $this->faviconRenderHelper, 'renderFavicons'));
 
     //only add link to meta box
     if (isset($this->aioFaviconSettings['removeLinkFromMetaBox']) && !$this->aioFaviconSettings['removeLinkFromMetaBox']) {
       add_action('wp_meta', array(& $this, 'renderMetaLink'));
     }
-
   }
 
-  // AioFaviconFrontend()
+  //init()
 
   /**
    * Renders plugin link in Meta widget
