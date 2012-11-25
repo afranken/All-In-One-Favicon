@@ -29,7 +29,7 @@
                     <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>-text" type="text" name="<?php echo $iconName ?>-text" size="60" maxlength="100000" value="<?php echo $this->aioFaviconSettings[$iconName] ?>"/>
                     <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>-button" type="button" name="<?php echo $iconName ?>-button" class="button-secondary" value="<?php _e('Upload') ?>" />
                     <br />
-                    <?php //only display
+                    <?php //only display delete checkbox if a favicon was found.
                     if(!empty($this->aioFaviconSettings[$iconName])) { ?>
                     <input type="checkbox" name="delete-<?php echo $iconName ?>"/><?php _e('Check box to delete favicon.',AIOFAVICON_TEXTDOMAIN) ?>
                     <?php } ?>
