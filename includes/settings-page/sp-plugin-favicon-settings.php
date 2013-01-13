@@ -26,7 +26,7 @@
                 </td>
                 <td>
                     <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>" type="file" name="<?php echo $iconName ?>" size="50" maxlength="100000" accept="image/*" value="<?php echo $this->aioFaviconSettings[$iconName] ?>" style="display:none;"/>
-                    <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>-text" type="text" name="<?php echo $iconName ?>-text" size="60" maxlength="100000" value="<?php echo $this->aioFaviconSettings[$iconName] ?>"/>
+                    <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>-text" type="text" name="<?php echo AIOFAVICON_SETTINGSNAME . '[' . $iconName ?>-text]" size="60" maxlength="100000" value="<?php echo $this->aioFaviconSettings[$iconName] ?>"/>
                     <input id="<?php echo AIOFAVICON_SETTINGSNAME .'-'. $iconName ?>-button" type="button" name="<?php echo $iconName ?>-button" class="button-secondary" value="<?php _e('Upload') ?>" />
                     <br />
                     <?php //only display delete checkbox if a favicon was found.
