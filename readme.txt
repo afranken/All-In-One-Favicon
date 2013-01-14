@@ -94,6 +94,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 
 == Changelog ==
 = 4.2 (2012-02-01) =
+* BUGFIX: Copy and paste of Favicon URLs now working correctly
 * NEW: Turkish translation by Selçuk Yahşi
 * CHANGE: Eddy Ernesto Ríos updated the Spanish translation
 * CHANGE: deleting all plugin settings now also deleted uploaded favicons

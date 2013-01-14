@@ -189,8 +189,24 @@ class AioFaviconBackend {
     //cross check the given referer for nonce set in settings form
     check_admin_referer('aio-favicon-settings-form');
 
-    // Create the settings array by merging the user's settings and the defaults
+    // get new settings from POST
     $usersettings = $_POST[AIOFAVICON_SETTINGSNAME];
+
+    // if URL was copy / pasted into form, fields named "*-text", but must be saved without "-text" suffix.
+    foreach ($usersettings as $settingsName => $settingsValue) {
+      if(preg_match('/(.*)-text/i',$settingsName, $matches)) {
+        if (count($matches) > 1) {
+          $match = $matches[1];
+          if(!empty($settingsValue)) {
+            $usersettings[$match] = $settingsValue;
+          }
+        }
+        //delete "*-text" from incoming array
+        unset($usersettings[$settingsName]);
+      }
+    }
+
+    // Create the settings array by merging the user's settings and the defaults
     $defaultArray = $this->aioFaviconDefaultSettings;
     $this->aioFaviconSettings = wp_parse_args($usersettings, wp_parse_args((array)get_option(AIOFAVICON_SETTINGSNAME), $defaultArray));
 

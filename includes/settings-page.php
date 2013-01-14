@@ -15,7 +15,6 @@
     <h2><?php echo AIOFAVICON_NAME . ' ' . __('Settings', AIOFAVICON_TEXTDOMAIN); ?></h2>
     <br class="clear"/>
 
-    <?php settings_fields(AIOFAVICON_SETTINGSNAME); ?>
 <?php
     require_once 'settings-page/sp-left-column.php';
     require_once 'settings-page/sp-right-column.php';
