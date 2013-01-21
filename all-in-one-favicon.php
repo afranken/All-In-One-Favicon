@@ -23,7 +23,7 @@ require_once (dirname (__FILE__) . '/includes/donationloader.php');
 require_once (dirname (__FILE__) . '/includes/debugger.php');
 
 // define constants
-define('AIOFAVICON_VERSION', '4.1');
+define('AIOFAVICON_VERSION', '4.2');
 
 if (!defined('AIOFAVICON_PLUGIN_BASENAME')) {
   //all-in-one-favicon/all-in-one-favicon.php
