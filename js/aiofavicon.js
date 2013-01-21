@@ -12,10 +12,25 @@
  * call favicon loader on page load.
  */
 jQuery(document).ready(function() {
+    removeWarning();
     loadFavicons();
     bindEventTriggers();
     bindChangeHandlers();
 });
+
+/**
+ * Remove warning from backend that JavaScript is not enabled
+ *
+ * @since 4.2
+ * @author Arne Franken
+ */
+(function(jQuery) {
+  removeWarning = function() {
+    jQuery('#javascriptWarning').hide();
+
+  }
+})(jQuery);
+
 
 /**
  * load all uploaded favicons
@@ -49,6 +64,9 @@ jQuery(document).ready(function() {
       var form = jQuery("form#aio-favicon-settings-update");
 
       var buttonInputs = form.find('input[type="button"]');
+
+      //all buttons disabled since they won't work without JavaScript anyway
+      buttonInputs.removeAttr('disabled');
 
       buttonInputs.click(function () {
           jQuery(this)

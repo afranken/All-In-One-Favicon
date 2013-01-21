@@ -99,7 +99,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 * CHANGE: Eddy Ernesto Ríos updated the Spanish translation
 * CHANGE: deleting all plugin settings now also deleted uploaded favicons
 * CHANGE: option "delete favicon" is only displayed if a favicon was already uploaded
-
+* CHANGE: add warning that JavaScript is needed for uploading favicons
 
 = 4.1 (2012-11-17) =
 * NEW: Hebrew translation by Ahrale
