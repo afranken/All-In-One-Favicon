@@ -16,13 +16,13 @@
         <table class="form-table">
             <tr>
                 <th scope="row">
-                    <label for="<?php echo AIOFAVICON_SETTINGSNAME ?>-removeReflectiveShine"><?php _e('Don\'t add reflective shine', AIOFAVICON_TEXTDOMAIN); ?>:</label>
+                    <label for="<?php echo AIOFAVICON_SETTINGSNAME ?>-removeReflectiveShine"><?php _e("Don't add reflective shine to Apple Touch Icon", AIOFAVICON_TEXTDOMAIN); ?>:</label>
                 </th>
                 <td width="32"></td>
                 <td>
                     <input type="checkbox" name="<?php echo AIOFAVICON_SETTINGSNAME ?>[removeReflectiveShine]" id="<?php echo AIOFAVICON_SETTINGSNAME ?>-removeReflectiveShine" value="true" <?php echo ($this->aioFaviconSettings['removeReflectiveShine'])
                         ? 'checked="checked"' : '';?>/>
-                    <br/><?php _e('Don\'t add reflective shine to Apple Touch Icon', AIOFAVICON_TEXTDOMAIN); ?>
+                    <br/><?php _e("Don't add reflective shine to Apple Touch Icon", AIOFAVICON_TEXTDOMAIN); ?>
                 </td>
             </tr>
             <tr>

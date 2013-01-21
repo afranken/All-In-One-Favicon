@@ -98,18 +98,18 @@ class AllInOneFavicon {
     if (is_admin()) {
       //mapping of favicon types to translatable Strings
       $this->aioFaviconFrontendMap = array(
-        'frontendICO' => 'ICO',
-        'frontendGIF' => 'GIF',
-        'frontendPNG' => 'PNG',
-        'frontendApple' => 'Apple Touch Icon'
+        'frontendICO' => _('ICO',AIOFAVICON_TEXTDOMAIN),
+        'frontendGIF' => _('GIF',AIOFAVICON_TEXTDOMAIN),
+        'frontendPNG' => _('PNG',AIOFAVICON_TEXTDOMAIN),
+        'frontendApple' => _('Apple Touch Icon',AIOFAVICON_TEXTDOMAIN)
       );
 
       //mapping of favicon types to translatable Strings
       $this->aioFaviconBackendMap = array(
-        'backendICO' => 'ICO',
-        'backendGIF' => 'GIF',
-        'backendPNG' => 'PNG',
-        'backendApple' => 'Apple Touch Icon'
+        'backendICO' => _('ICO',AIOFAVICON_TEXTDOMAIN),
+        'backendGIF' => _('GIF',AIOFAVICON_TEXTDOMAIN),
+        'backendPNG' => _('PNG',AIOFAVICON_TEXTDOMAIN),
+        'backendApple' => _('Apple Touch Icon',AIOFAVICON_TEXTDOMAIN)
       );
 
       $donationLoader = new AIOFaviconDonationLoader();
