@@ -93,6 +93,9 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 [Please visit my site for screenshots](http://www.techotronic.de/plugins/all-in-one-favicon/).
 
 == Changelog ==
+= 4.2.1 (2012-01-21) =
+* BUGFIX: fix errormessage that _() wouldn't work in some installations
+
 = 4.2 (2012-01-21) =
 * BUGFIX: Copy and paste of Favicon URLs now working correctly
 * NEW: Turkish translation by Selçuk Yahşi
