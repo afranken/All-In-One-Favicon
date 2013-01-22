@@ -6,7 +6,7 @@
  * Plugin Name: All in one Favicon
  * Plugin URI: http://www.techotronic.de/plugins/all-in-one-favicon/
  * Description: All in one Favicon management. Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif)
- * Version: 4.2
+ * Version: 4.2.1
  * Author: Arne Franken
  * Author URI: http://www.techotronic.de/
  * License: GPL
@@ -23,7 +23,7 @@ require_once (dirname (__FILE__) . '/includes/donationloader.php');
 require_once (dirname (__FILE__) . '/includes/debugger.php');
 
 // define constants
-define('AIOFAVICON_VERSION', '4.2');
+define('AIOFAVICON_VERSION', '4.2.1');
 
 if (!defined('AIOFAVICON_PLUGIN_BASENAME')) {
   //all-in-one-favicon/all-in-one-favicon.php
@@ -98,18 +98,18 @@ class AllInOneFavicon {
     if (is_admin()) {
       //mapping of favicon types to translatable Strings
       $this->aioFaviconFrontendMap = array(
-        'frontendICO' => _('ICO',AIOFAVICON_TEXTDOMAIN),
-        'frontendGIF' => _('GIF',AIOFAVICON_TEXTDOMAIN),
-        'frontendPNG' => _('PNG',AIOFAVICON_TEXTDOMAIN),
-        'frontendApple' => _('Apple Touch Icon',AIOFAVICON_TEXTDOMAIN)
+        'frontendICO' => __('ICO',AIOFAVICON_TEXTDOMAIN),
+        'frontendGIF' => __('GIF',AIOFAVICON_TEXTDOMAIN),
+        'frontendPNG' => __('PNG',AIOFAVICON_TEXTDOMAIN),
+        'frontendApple' => __('Apple Touch Icon',AIOFAVICON_TEXTDOMAIN)
       );
 
       //mapping of favicon types to translatable Strings
       $this->aioFaviconBackendMap = array(
-        'backendICO' => _('ICO',AIOFAVICON_TEXTDOMAIN),
-        'backendGIF' => _('GIF',AIOFAVICON_TEXTDOMAIN),
-        'backendPNG' => _('PNG',AIOFAVICON_TEXTDOMAIN),
-        'backendApple' => _('Apple Touch Icon',AIOFAVICON_TEXTDOMAIN)
+        'backendICO' => __('ICO',AIOFAVICON_TEXTDOMAIN),
+        'backendGIF' => __('GIF',AIOFAVICON_TEXTDOMAIN),
+        'backendPNG' => __('PNG',AIOFAVICON_TEXTDOMAIN),
+        'backendApple' => __('Apple Touch Icon',AIOFAVICON_TEXTDOMAIN)
       );
 
       $donationLoader = new AIOFaviconDonationLoader();
