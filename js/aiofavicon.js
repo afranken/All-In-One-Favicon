@@ -68,10 +68,12 @@ jQuery(document).ready(function() {
       //all buttons disabled since they won't work without JavaScript anyway
       buttonInputs.removeAttr('disabled');
 
+      console.debug("added hook to button inputs");
       buttonInputs.click(function () {
           jQuery(this)
               .siblings('input[type="file"]')
               .trigger('click');
+          console.debug("fired hook on button input %s", jQuery(this).attr('id'));
       });
 
     }
@@ -95,11 +97,16 @@ jQuery(document).ready(function() {
 
         var fileInputs = form.find('input[type="file"]');
 
+        console.debug("added hook to file inputs");
         fileInputs.change(function () {
             jQuery(this)
                 .siblings('input[type="text"]')
                 .val(jQuery(this)
                 .val());
+            console.debug("fired hook on file input %s", jQuery(this).attr('id'));
+        });
+        fileInputs.click(function() {
+          console.debug("click on file input %s", jQuery(this).attr('id'));
         });
     }
 })(jQuery);
