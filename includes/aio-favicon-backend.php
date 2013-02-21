@@ -218,9 +218,11 @@ class AioFaviconBackend {
     // handle file upload
     $overrides = array('action' => 'aioFaviconUpdateSettings');
     foreach ($_FILES as $icoName => $icoArray) {
-      $file = wp_handle_upload($_FILES[$icoName], $overrides);
-      if (isset($file['url'])) {
-        $this->aioFaviconSettings[$icoName] = $file['url'];
+      if(!empty($icoArray['name'])) {
+        $file = wp_handle_upload($_FILES[$icoName], $overrides);
+        if (isset($file['url'])) {
+          $this->aioFaviconSettings[$icoName] = $file['url'];
+        }
       }
     }
 

@@ -12,11 +12,40 @@
  * call favicon loader on page load.
  */
 jQuery(document).ready(function() {
-    removeWarning();
-    loadFavicons();
-    bindEventTriggers();
-    bindChangeHandlers();
+  emulateConsoleForIE();
+  removeWarning();
+  loadFavicons();
+  bindEventTriggers();
+  bindChangeHandlers();
 });
+
+/**
+ * Make console.log do nothing in IE 9 and below, otherwise JavaScript would break
+ *
+ * @since 4.3
+ * @author Arne Franken
+ */
+(function(jQuery) {
+  emulateConsoleForIE = function() {
+
+    if (!console) {
+      console = {};
+    }
+    // union of Chrome, FF, IE, and Safari console methods
+    var m = [
+      "log", "info", "warn", "error", "debug", "trace", "dir", "group",
+      "groupCollapsed", "groupEnd", "time", "timeEnd", "profile", "profileEnd",
+      "dirxml", "assert", "count", "markTimeline", "timeStamp", "clear"
+    ];
+    // define undefined methods as noops to prevent errors
+    for (var i = 0; i < m.length; i++) {
+      if (!console[m[i]]) {
+        console[m[i]] = function() {};
+      }
+    }
+
+  }
+})(jQuery);
 
 /**
  * Remove warning from backend that JavaScript is not enabled
@@ -51,7 +80,9 @@ jQuery(document).ready(function() {
 // loadFavicons()
 
 /**
- * Find all buttons, attach a click event.
+ * Workaround for Mozilla
+ *
+ * Find all labels with class "trigger-file-input", attach a click event.
  * Event triggers a click event on the hidden "file" input field
  * which displays the file selector dialog.
  *
@@ -63,18 +94,14 @@ jQuery(document).ready(function() {
 
       var form = jQuery("form#aio-favicon-settings-update");
 
-      var buttonInputs = form.find('input[type="button"]');
-
-      //all buttons disabled since they won't work without JavaScript anyway
-      buttonInputs.removeAttr('disabled');
-
-      console.debug("added hook to button inputs");
-      buttonInputs.click(function () {
+      if(jQuery.browser.mozilla) {
+        jQuery('.trigger-file-input').click(function() {
           jQuery(this)
               .siblings('input[type="file"]')
               .trigger('click');
           console.debug("fired hook on button input %s", jQuery(this).attr('id'));
-      });
+        });
+      }
 
     }
 })(jQuery);

@@ -95,6 +95,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 
 == Changelog ==
 = 4.3 (2012-03-01) =
+* BUGFIX: File upload will now work in certain browsers, e.g. Internet Explorer and Safari 5
 * NEW: Portuguese translation by Miguel Ângelo Patricio
 * CHANGE: Turkish translation updated by Ömer Faruk Karabulut
 
