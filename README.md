@@ -4,7 +4,7 @@ Donate link: http://www.techotronic.de/donate/
 Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, iphone, multisite  
 Requires at least: 2.8  
 Tested up to: 3.3  
-Stable tag: 4.2.1 
+Stable tag: 4.3
 
 Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).  
 
@@ -29,11 +29,13 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 * German (`de_DE`) by [Arne Franken](http://www.techotronic.de/)
 * Italian (`it_IT`) by [Valerio Vendrame](http://www.valeriovendrame.it/)
 * Polish (`pl_PL`) by [Piotr Czarnecki](http://www.facebook.com/piniu69/)
+* Portuguese (`pt_PT`) by [Miguel Ângelo Patricio](http://www.miguelpatricio.com/)
 * Serbian (`sr_RS`) by [Balkanboy Media team](http://dralvaro.com/)
 * Simplified Chinese (`zh_CN`) by [Tunghsiao Liu](http://sparanoid.com/)
 * Spanish (`es_ES`) by [Juan Pablo Pérez Manes](mailto:jppm30@gmail.com)
 * Slovak (`sk_SK`) by [Viliam Brozman](http://www.brozman.sk/blog)
 * Swedish (`sv_SE`) by [Christian Nilsson](http://www.theindiaexperience.se/)
+* Turkish (`tr_TR`) by [Ömer Faruk Karabulut](http://ramerta.com)
 
 Is your native language missing?  
 Translating the plugin is easy if you understand english and are fluent in another language.  
@@ -94,6 +96,10 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 [Please visit my site for screenshots](http://www.techotronic.de/plugins/all-in-one-favicon/).
 
 ## Changelog ##
+### 4.3 (2012-02-21) ###
+* BUGFIX: File upload will now work in certain browsers, e.g. Internet Explorer and Safari 5
+* NEW: Portuguese translation by Miguel Ângelo Patricio
+* CHANGE: Turkish translation updated by Ömer Faruk Karabulut
 
 ### 4.2.1 (2012-01-21) ###
 * BUGFIX: fix errormessage that _() wouldn't work in some installations
