@@ -36,7 +36,7 @@ See [plugin page](http://www.techotronic.de/plugins/all-in-one-favicon/) for mor
 * Spanish (`es_ES`) by Eddy Ernesto Ríos
 * Slovak (`sk_SK`) by [Viliam Brozman](http://www.brozman.sk/blog)
 * Swedish (`sv_SE`) by [Christian Nilsson](http://www.theindiaexperience.se/)
-* Turkish (`tr_TR`) by Ömer Faruk Karabulut
+* Turkish (`tr_TR`) by [Ömer Faruk Karabulut](http://ramerta.com)
 
 Is your native language missing?  
 Translating the plugin is easy if you understand english and are fluent in another language.  
