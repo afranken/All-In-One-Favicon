@@ -159,3 +159,7 @@ Go to the settings page and and upload your Favicon(s) or add the path/URL to al
 
 ### 1.0 (2010-05-06) ###
 * NEW: Initial release.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/afranken/all-in-one-favicon/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
