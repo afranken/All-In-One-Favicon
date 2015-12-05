@@ -3,7 +3,7 @@ Contributors: techotronic
 Donate link: http://www.techotronic.de/donate/  
 Tags: theme, favicon, admin, blog, wordpress, image, images, graphic, graphics, icon, iphone, multisite  
 Requires at least: 2.8  
-Tested up to: 4.3
+Tested up to: 4.4
 Stable tag: 4.3
 
 Easily add a Favicon to your site and the WordPress admin pages. Complete with upload functionality. Supports all three Favicon types (ico,png,gif).
