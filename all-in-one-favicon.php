@@ -160,10 +160,18 @@ class AllInOneFavicon {
 
     // Create and return array of default settings
     return array(
-      'aioFaviconVersion' => AIOFAVICON_VERSION,
-      'debugMode' => false,
+      'aioFaviconVersion'     => AIOFAVICON_VERSION,
+      'debugMode'             => false,
       'removeReflectiveShine' => false,
-      'removeLinkFromMetaBox' => true
+      'removeLinkFromMetaBox' => true,
+      'frontendICO'           => '',
+      'frontendGIF'           => '',
+      'frontendPNG'           => '',
+      'frontendApple'         => '',
+      'backendICO'            => '',
+      'backendGIF'            => '',
+      'backendPNG'            => '',
+      'backendApple'          => ''
     );
   }
 
